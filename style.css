@@ -1,0 +1,36 @@
+.sidebar{
+    width: 2.5rem;
+    height: 100vh;
+    background-color: black;
+}
+.mybtn{
+    border: none;
+    border-radius: 0rem;
+    background: none;
+    padding: .4rem  .5rem;
+    color: #fff;
+}
+.mybtn:hover{
+    background: #ffffff32;
+    color: #fff;
+}
+.mybtn i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.nav-link:hover{
+  background-color: #ffffff32;
+}
+input{
+    background-color: #ffffff35 !important;
+    color: #fff !important;
+    border: none !important;
+}
+input::placeholder{
+    color: #fff !important;
+}
+.input-group span{
+    background-color: #ffffff35 !important;
+    border: none !important;
+    color: #fff !important;
+}
