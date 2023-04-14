@@ -18,57 +18,146 @@
 
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+        <div class="container-fluid px-0 ">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">&#8249;Sites</a>
-                    </li>
-                    <li class="nav-item me-5">
-                        <a class="nav-link" href="#">Page:Home</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <div class="input-group flex-nowrap">
-                            <span class="input-group-text" id="addon-wrapping"><i class='bx bx-search'></i></span>
-                            <input type="text" class="form-control" placeholder="Find everything" aria-label="Username"
-                                aria-describedby="addon-wrapping">
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                <div class="d-flex starter">
+                    <a class="nav-link red-tooltip " href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="My Sites">&#8249;Sites</a>
+                    <a class="nav-link px-1 me-4" href="#">Page:Home</a>
+                    <div class="input-group  me-3 ">
+                        <span class="input-group-text" id="addon-wrapping"><i class='bx bx-search'></i></span>
+                        <input type="text" class="form-control" placeholder="Find everything" aria-label="Username"
+                            aria-describedby="addon-wrapping">
+                    </div>
+                    <div class="d-flex align-items-center ">
+                        <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="Design Page"> <i class='bx bx-move'></i></button>
+                        <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="Edit Content"><i class='bx bx-left-indent'></i> </button>
+                    </div>
+                </div>
+                <div class="d-flex m-auto ">
+                    <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Desktops"><i
+                            class='bx bx-desktop'></i></button>
+                    <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Laptops"><i
+                            class='bx bx-laptop'></i></button>
+                    <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tablets"><i
+                            class='bx bx-tab'></i></button>
+                    <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Landscape phones"><i class='bx bx-mobile-landscape'></i></button>
+                    <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Portait Phones"><i class='bx bx-mobile-alt'></i></button>
+                    <button class="btn mybtn"> <i class='bx bx-dots-horizontal-rounded'></i></button>
+                </div>
+                <div class="d-flex align-items-center  me-0 ">
+                    <p class="p-0 m-0 text-warning pe-2">Saved</p>
+                    <a class="nav-link btn mybtn" href="#"><i class='bx bx-undo'></i></a>
+                    <a class="nav-link btn mybtn" href="#"><i class='bx bx-redo'></i></a>
+                </div>
+
+                <ul class="navbar-nav mb-2 mb-lg-0 me-0 flex-wrap ">
+                    <li class="nav-item d-flex  px-2 border-start align-items-center  Firsthover">
+                        <button class="btn mybtn d-flex align-content-center flex-wrap justify-content-center"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Publish"><i
+                                class='bx bx-cloud-upload pe-1'></i> Publish</button>
+                        <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Preview"><i
+                                class='bx bx-file-find'></i></button>
+                        <div class="dropdown">
+                            <button class="btn mybtn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                aria-expanded="false">
+                                <i class='bx bx-cog'></i>
+                            </button>
+                            <ul class="dropdown-menu p-0 " aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item " href="#">Site Setting...</a></li>
+                                <li><a class="dropdown-item " href="#">Page Setting..</a></li>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <a class="dropdown-item " href="#">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="p-0 m-0">Site Language...</p>
+                                            <i class='bx bxs-crown pe-1' style="color: goldenrod;"></i>
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a class="dropdown-item my-2" href="#">
+                                        <h5 class="p-0 m-0 text-secondary">APPLICATION</h5>
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item " href="#">
+                                        <div class="d-flex align-items-center">
+                                            <i class='bx bxs-moon fs-4 me-2'></i>
+                                            <p class="p-0 m-0"> Appearance </p>
+                                        </div>
+                                    </a></li>
+                                <li class="dropstart">
+                                    <a class="dropdown-item  d-flex justify-content-between align-items-center" href="#"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa fa-language fs-4 me-2"></i>
+                                            <p class="p-0 m-0"> Language-EN </p>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu p-0">
+                                        <li><a class="dropdown-item" href="#">English</a></li>
+                                        <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                        <li><a class="dropdown-item" href="#">Korean</a></li>
+                                        <li><a class="dropdown-item" href="#">Turkish</a></li>
+                                        <li><a class="dropdown-item" href="#">Chinese</a></li>
+                                        <li><a class="dropdown-item" href="#">Russain</a></li>
+                                        <li><a class="dropdown-item" href="#">French</a></li>
+                                        <li><a class="dropdown-item" href="#">Italian</a></li>
+                                        <li><a class="dropdown-item" href="#">Korean</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="nav-item d-flex">
-                        <button class="btn mybtn"> <i class='bx bx-move'></i></button>
-                        <button class="btn mybtn"><i class='bx bx-left-indent'></i> </button>
+                    <li class="nav-item border-start d-flex align-items-center flex-wrap ">
+                        <button class="btn mybtn d-flex " data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                            title="Premium"><i class='bx bxs-crown pe-1' style="color: goldenrod;"></i> Premium</button>
+                        <div class="dropdown ">
+                            <button class="btn mybtn " type="button" id="dropdownMenu2" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                aria-expanded="false">
+                                <i class='bx bx-user'></i>
+                            </button>
+                            <ul class="dropdown-menu user p-0 " aria-labelledby="dropdownMenu2">
+                                <li><a class="dropdown-item p-1" href="#">NISHANT Rajput </br>
+                                    nishantrajputa11@gmail.com</a></li>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <a class="dropdown-item p-1 align-items-center d-flex " href="#"><i class='bx bxs-bar-chart-alt-2 fs-2 me-2'></i>Leads</a>
+                                </li>
+                             
+                                <li> <a class="dropdown-item p-1 align-items-center d-flex  my-2" href="#"><i class='bx bx-check-circle fs-2 me-2'></i>Activate</a></li>
+                                <li class="d-flex align-items-center justify-content-between">
+                                    <a class="dropdown-item p-1 align-items-center d-flex " href="#"><i class='bx bx-star fs-2 me-2' ></i>Licenses</a>
+                                </li>
+                                <li><a class="dropdown-item p-1 align-items-center d-flex" href="#"><i class='bx bx-chat fs-2 me-2'></i>Support Issues</a></li>
+                                <li><a class="dropdown-item p-1 align-items-center d-flex " href="#">  <i class='bx bx-cog fs-2 me-2'></i>Profile</a></li>
+                                <li class="dropstart">
+                                    <a class="dropdown-item p-1 d-flex justify-content-between align-items-center" href="#"
+                                        data-bs-toggle="dropdown" aria-expanded="false" >
+                                            <p class="p-0 m-0 align-items-center d-flex"> <i class='bx bx-download fs-2 me-2 '></i>Download </p>
+                                            <i class='bx bx-chevron-right fs-2' ></i>
+                                    
+                                    </a>
+                                    <ul class="dropdown-menu p-0">
+                                        <li><a class="dropdown-item p-1 align-items-center d-flex" href="#">Desktop Application</a></li>
+                                        <li><a class="dropdown-item p-1 align-items-center d-flex" href="#">WordPress Plugin</a></li>
+                                        <li><a class="dropdown-item p-1 align-items-center d-flex" href="#">Joomla Plugin</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item p-1 align-items-center d-flex " href="#"><i class='bx bx-exit fs-2 me-2'></i>SignOut</a> </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
-                <div class="d-flex me-auto">
-                    <button class="btn mybtn"><i class='bx bx-desktop'></i></button>
-                    <button class="btn mybtn"><i class='bx bx-laptop'></i></button>
-                    <button class="btn mybtn"><i class='bx bx-tab'></i></button>
-                    <button class="btn mybtn"><i class='bx bx-mobile-landscape'></i></button>
-                    <button class="btn mybtn"><i class='bx bx-mobile-alt'></i></button>
-                    <button class="btn mybtn"> <i class='bx bx-dots-horizontal-rounded'></i></button>
-
-                </div>
-                <div class="d-flex mx-1">
-                    <button class="btn mybtn"><i class='bx bx-undo'></i></button>
-                    <button class="btn mybtn"><i class='bx bx-redo'></i></button>
-                </div>
-
-                <div class="d-flex  ">
-                    <div class="d-flex px-2 border-start">
-                        <button class="btn mybtn d-flex align-content-center flex-wrap justify-content-center"><i class='bx bx-cloud-upload pe-1'></i> Publish</button>
-                        <button class="btn mybtn"><i class='bx bx-file-find'></i></button>
-                        <button class="btn mybtn"><i class='bx bx-cog'></i></button>
-                    </div>
-                    <div class="border-start d-flex ps-2">
-                        <button class="btn mybtn d-flex align-content-center flex-wrap justify-content-center"><i class='bx bxs-crown pe-1' style="color: goldenrod;"></i> Premium</button>
-                        <button class="btn mybtn"><i class='bx bx-user'></i></button>
-                    </div>
-                </div>
             </div>
         </div>
     </nav>
@@ -104,6 +193,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+    </script>
 </body>
 
 </html>
