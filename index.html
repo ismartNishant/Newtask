@@ -76,7 +76,8 @@
                                 <i class='bx bx-cog'></i>
                             </button>
                             <ul class="dropdown-menu p-0 " aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item " href="#">Site Setting...</a></li>
+                                <li><a class="dropdown-item " href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModalforSiteSetting ">Site Setting...</a></li>
 
                                 <li><a class="dropdown-item " href="#" data-bs-toggle="modal"
                                         data-bs-target="#exampleModalforPageSetting "> Page Setting..
@@ -190,7 +191,7 @@
     <!-- Modal for language setting  -->
     <div class="modal fade" id="exampleModalforlanguage" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered .modal-fullscreen-lg-down modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
 
@@ -325,7 +326,7 @@
                                 <div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">Description</label>
                                     <div class="col-8">
-                                        <textarea class="form-control description" ></textarea>
+                                        <textarea class="form-control description"></textarea>
                                     </div>
                                 </div>
                                 <div>
@@ -340,16 +341,18 @@
                                 <div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">Keywords</label>
                                     <div class="col-8">
-                                        <textarea class="form-control mb-1" style="height: 55px" placeholder="INTUITIVE, Your design is your passion, Key Features, Pricing Plan, Empire State Building"></textarea>
+                                        <textarea class="form-control mb-1" style="height: 55px"
+                                            placeholder="INTUITIVE, Your design is your passion, Key Features, Pricing Plan, Empire State Building"></textarea>
                                         <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                             <label class="form-check-label" for="flexCheckDefault">
                                                 Don't show the page in search result
                                             </label>
                                         </div>
                                     </div>
                                 </div>
-                             
+
                             </div>
                             <div class="tab-pane fade" id="v-pills-Social-Share" role="tabpanel"
                                 aria-labelledby="v-pills-Social-Share-tab">
@@ -359,38 +362,38 @@
                                 <div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">Preview</label>
                                     <div class="col-8 d-flex align-items-start flex-wrap gap-2">
-                                        <div class="card" >
+                                        <div class="card">
                                             <div class="social-share-img">
                                                 <img src="./imgs/no.jpg" class="card-img-top " alt="No image">
                                             </div>
-                                          
+
                                             <div class="card-body py-1 px-2">
                                                 <p class="card-text m-0 text-secondary">EXAMPLE.COM</p>
-                                              <h6 class="card-title m-0">Page Title</h6>
-                                              <p class="card-text m-0 text-secondary">Page Desciption</p>
-                                             
+                                                <h6 class="card-title m-0">Page Title</h6>
+                                                <p class="card-text m-0 text-secondary">Page Desciption</p>
+
                                             </div>
-                                          </div>
-                                          <button type="button" class="btn btn-outline-dark mb-3">Image</button>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-dark mb-3">Image</button>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">Title</label>
                                     <div class="col-8">
-                                        <input type="text" class="form-control" >
+                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">Description</label>
                                     <div class="col-8">
-                                        <textarea class="form-control description" ></textarea>
+                                        <textarea class="form-control description"></textarea>
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">URL</label>
                                     <div class="col-8">
-                                        <input type="text" class="form-control" >
+                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
 
@@ -400,20 +403,20 @@
                                 <div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">Meta Tags</label>
                                     <div class="col-8">
-                                        <textarea class="form-control html-section-textarea" ></textarea>
+                                        <textarea class="form-control html-section-textarea"></textarea>
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
                                     <label class="col-sm-3 col-form-label">Additional Head HTML</label>
                                     <div class="col-8">
-                                        <textarea class="form-control html-section-textarea" ></textarea>
+                                        <textarea class="form-control html-section-textarea"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-css" role="tabpanel"
                                 aria-labelledby="v-pills-css-tab">
                                 <div class="col-8">
-                                    <textarea class="form-control html-section-textarea" ></textarea>
+                                    <textarea class="form-control html-section-textarea"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -424,7 +427,409 @@
         </div>
     </div>
     <!-- Modal for Page setting section ended -->
+    <!-- Modal for Site setting section  -->
+    <div class="modal fade" id="exampleModalforSiteSetting" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl ">
+            <div class="modal-content">
+                <div class="modal-header border-0 py-2  ">
+                    <h5 class="modal-title">Site Setting</h5>
+                    <div>
+                        <button type="button" class="btn btn-primary  me-3 py-1 " data-bs-dismiss="modal">Done</button>
+                        <button type="button" class="btn btn-outline-dark py-1" data-bs-dismiss="modal">X</button>
+                    </div>
 
+                </div>
+                <div class="modal-body ">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3 border-end border-2  pe-4 w-25" id="v-pills-tab"
+                            role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active text-start my-1" id="v-pills-general-tab"
+                                data-bs-toggle="pill" data-bs-target="#sv-pills-general" type="button" role="tab"
+                                aria-controls="sv-pills-general" aria-selected="true">General</button>
+                            <button class="nav-link text-start my-1 " id="v-pills-seo-tab" data-bs-toggle="pill"
+                                data-bs-target="#sv-pills-seo" type="button" role="tab" aria-controls="sv-pills-seo"
+                                aria-selected="false">SEO</button>
+                            <button class="nav-link text-start my-1 " id="v-pills-google-tab" data-bs-toggle="pill"
+                                data-bs-target="#sv-pills-google" type="button" role="tab"
+                                aria-controls="sv-pills-google" aria-selected="false">Google</button>
+                            <button class="nav-link text-start my-1" id="v-pills-html-tab" data-bs-toggle="pill"
+                                data-bs-target="#sv-pills-html" type="button" role="tab" aria-controls="sv-pills-html"
+                                aria-selected="false">HTML</button>
+                            <button class="nav-link text-start my-1" id="v-pills-css-tab" data-bs-toggle="pill"
+                                data-bs-target="#sv-pills-css" type="button" role="tab" aria-controls="sv-pills-css"
+                                aria-selected="false">CSS </button>
+                            <button class="nav-link text-start my-1" id="v-pills-cookies-tab" data-bs-toggle="pill"
+                                data-bs-target="#sv-pills-cookies" type="button" role="tab"
+                                aria-controls="sv-pills-cookies" aria-selected="false">Cookies </button>
+                            <button class="nav-link text-start my-1" id="v-pills-theme-tab" data-bs-toggle="pill"
+                                data-bs-target="#sv-pills-theme" type="button" role="tab" aria-controls="sv-pills-theme"
+                                aria-selected="false">Theme </button>
+                            <button class="nav-link text-start my-1" id="v-pills-white-label-tab" data-bs-toggle="pill"
+                                data-bs-target="#sv-pills-white-label" type="button" role="tab"
+                                aria-controls="sv-pills-white-label" aria-selected="false">White Label</button>
+                            <button class="nav-link text-start my-1" id="v-pills-license-tab" data-bs-toggle="pill"
+                                data-bs-target="#sv-pills-license" type="button" role="tab"
+                                aria-controls="sv-pills-license" aria-selected="false">Client License</button>
+                        </div>
+                        <div class="tab-content w-100" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="sv-pills-general" role="tabpanel"
+                                aria-labelledby="v-pills-general-tab">
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Site Title</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" value="WebSite4603814">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Web Address</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" value="https://WebSite4603814">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label"> <i class='bx bxs-crown '
+                                            style="color: goldenrod;"></i>Custom Domain</br>
+                                        <p class="m-0 p-0"><a class="text-decoration-none" href="#"> Get License </a>
+                                        </p>
+                                    </label>
+                                    <div class="col-8">
+                                        <input type="text" disabled class="form-control" placeholder="https://">
+                                        <p class="mt-3"> <a class="text-decoration-none" href="#">How to confiure custom
+                                                domain</a> </p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row align-items-center">
+                                    <label class="col-sm-3 col-form-label"> <i class='bx bxs-crown'
+                                            style="color: goldenrod;"></i>URLs</br>
+                                        <p class="m-0 p-0"><a class="text-decoration-none" href="#"> Get License </a>
+                                        </p>
+                                    </label>
+                                    <div class="col-8">
+                                        <div class="form-check ">
+                                            <input class="form-check-input " disabled type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Create Links without .html"
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Home Page</label>
+                                    <div class="col-8">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Page 1</option>
+                                            <option value="1">About</option>
+                                            <option value="2">Contact</option>
+                                            <option value="3">Page 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Favicon</label>
+                                    <div class="col-8">
+                                        <button type="button" class="btn btn-outline-dark ">Upload</button>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row align-items-center">
+                                    <label class="col-sm-3 col-form-label">Footer</label>
+                                    <div class="col-8">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Display "Made in NicePage"
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="sv-pills-seo" role="tabpanel"
+                                aria-labelledby="v-pills-seo-tab">
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Language</label>
+                                    <div class="col-8">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>English</option>
+                                            <option value="1">Hindi</option>
+                                            <option value="2">Korean</option>
+                                            <option value="3">Spanish</option>
+                                        </select>
+                                        <p class="m-0 p-0">Default site Language</p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Country</label>
+                                    <div class="col-8">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>None</option>
+                                            <option value="1">INDIA</option>
+                                            <option value="2">US</option>
+                                            <option value="3">SOUTH KOREA</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Default Keywords</label>
+                                    <div class="col-8">
+                                        <textarea class="form-control description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Default Desciption</label>
+                                    <div class="col-8">
+                                        <textarea class="form-control description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Image Lazy Loading
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Disable Open Graph
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show " id="sv-pills-google" role="tabpanel"
+                                aria-labelledby="v-pills-google-tab">
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Google Analytics ID</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Google Tag Manager</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" placeholder="e.g. GTM-NTGP4MN3">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Google optimise Container</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" placeholder="e.g. GTM-NTGP4MN3">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">reCaptcha Site Key</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control"
+                                            placeholder="N3wuhR454OJzkOtmlUGokfNnFCqOYlKT">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">reCaptcha Secret Key</label>
+                                    <div class="col-8">
+                                        <input type="password" class="form-control" placeholder="*****************">
+                                        <p class="mt-3"> <a class="text-decoration-none" href="#">Learn more about
+                                                reCaptcha</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="sv-pills-html" role="tabpanel"
+                                aria-labelledby="v-pills-html-tab">
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Meta Tags</label>
+                                    <div class="col-8">
+                                        <textarea class="form-control html-section-textarea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Additional Head HTML</label>
+                                    <div class="col-8">
+                                        <textarea class="form-control html-section-textarea"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="sv-pills-css" role="tabpanel"
+                                aria-labelledby="v-pills-css-tab">
+                                <div class="col-8">
+                                    <textarea class="form-control html-section-textarea"
+                                        placeholder="Additional CSS"></textarea>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="sv-pills-cookies" role="tabpanel"
+                                aria-labelledby="v-pills-cookies-tab">
+                                    <div class="mb-3 row align-items-center">
+                                        <label class="col-sm-3 col-form-label ">Cookies Policy Popup</label>
+                                        <div class="col-8 d-flex justify-content-between align-items-center flex-wrap">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" 
+                                                    >
+                                                <label class="form-check-label" >
+                                                    Show on all Pages
+                                                </label>
+                                            </div>
+                                            <button class="btn btn-primary"> Edit Template</button>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-3 col-form-label ">Run Script After Cookie Acceptance</label>
+                                        <div class="col-8">
+                                            <textarea class="form-control description"  ></textarea>
+                                        </div>
+                                    </div>
+                                   
+                            </div>
+                            <div class="tab-pane fade" id="sv-pills-theme" role="tabpanel"
+                                aria-labelledby="v-pills-theme-tab">
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label "></label>
+                                    <div class="col-8 d-flex align-items-center flex-wrap">
+                                        <button class="btn btn-outline-dark me-2 d-flex align-items-center justify-content-center"><i class='bx bx-font-color fs-2'></i> Theme Setting</button>
+                                        <p class="m-0 p-0 text-secondary">Theme, Colors, Font and Typography for all pages</p>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label t">Author</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" 
+                                             >
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label t">Author URL</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" 
+                                              >
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label t">Version</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control"  value="1.0"
+                                              >
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label t">Theme URL</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" 
+                                              >
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label t">Tags</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control"  value="left-sidebar, right-sidebar, custom-background, custom-colors, blog"
+                                         >
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label"> Desciption</label>
+                                    <div class="col-8">
+                                        <textarea class="form-control description" aria-valuetext="Nicepage-generated theme" placeholder="Nicepage-generated theme"></textarea>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label t">Generator</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control"  value="Nicepage 5.8.6, nicepage.com"
+                                            placeholder="Nicepage"  >
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label t">Thumbnail </label>
+                                    <div class="col-8 d-flex align-items-center flex-wrap">
+                                        <button class="btn btn-outline-dark me-4">Upload</button>
+                                        <p class="m-0 p-0 text-secondary">Recommended image size is</br>
+                                        for Joomla 640 x 388px, WordPress 880x 660px</p>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="tab-pane fade text-secondary" id="sv-pills-white-label" role="tabpanel"
+                                aria-labelledby="v-pills-white-label-tab">
+                                <div class="mb-4">
+                                    <p class="m-0 p-0 d-flex align-items-center flex-wrap"> <i class='bx bxs-crown fs-2 me-2'
+                                        style="color: goldenrod;"></i> to use feature below <a href="#" class="text-decoration-none px-1"> the ULTIMATE License  </a> is required</p>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label t">Title</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" disabled
+                                            placeholder="Nicepage"  >
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label ">Logo ( small ) </label>
+                                    <div class="col-8 d-flex align-items-center flex-wrap">
+                                        <button type="button"  disabled class="btn btn-outline-dark me-4 ">Upload</button>
+                                        <p class="m-0 p-0">Required image size 33x32px </p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label ">Logo ( Big )</label>
+                                    <div class="col-8 d-flex align-items-center flex-wrap">
+                                        <button type="button" disabled class="btn btn-outline-dark me-4 ">Upload</button>
+                                        <p class="m-0 p-0">Required image size 80x40px </p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label ">Author</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" disabled 
+                                            placeholder="Nicepage https://www.nicepage.com">
+                                            
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label  ">Author URL </label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" disabled
+                                            placeholder="https://www.nicepage.com">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label ">Desciption</label>
+                                    <div class="col-8">
+                                        <textarea class="form-control description" placeholder="design wesites with any images and texts in seconds!" disabled></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="sv-pills-license" role="tabpanel"
+                                aria-labelledby="v-pills-license-tab">
+                                <div class="col-8">
+                                    <p class="m-0 p-0 d-flex align-items-center flex-wrap"> <i class='bx bxs-crown fs-2 me-2'
+                                            style="color: goldenrod;"></i> to use feature below <a href="#" class="text-decoration-none px-1"> the Pro License or higher </a> is required</p>
+
+                                </div>
+                                <div class="mt-5">
+                                    <p class="m-0 p-0 text-secondary"> Allow your clients to:</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" 
+                                            id="flexRadioDisabled" disabled checked>
+                                        <label class="form-check-label" >
+                                            Design pages and edit content
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" 
+                                            id="flexRadioCheckedDisabled" disabled>
+                                        <label class="form-check-label" >
+                                            Edit content Only
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ended-->
 
     <div>
         <!--side bar-->

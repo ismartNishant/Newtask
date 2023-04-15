@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
@@ -94,6 +93,11 @@
     /* left: -8rem !important; */
     width: 20rem;
 }
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff !important;
+
+}
 
 #exampleModalforlanguage .modal-body .bxs-crown {
     font-size: 8rem;
@@ -109,52 +113,69 @@
 }
 
 #exampleModalforappearance .modal-body .d-flex div:hover,
-#exampleModalforPageSetting .modal-body .nav-link:hover {
+#exampleModalforPageSetting .modal-body .nav-link:hover ,
+#exampleModalforSiteSetting .modal-body .nav-link:hover{
     border: 2px solid #047dff;
 }
 
-#exampleModalforPageSetting .modal-body .nav-link{
-    color: #000 ;
+
+#exampleModalforPageSetting .modal-body .nav-link ,
+#exampleModalforSiteSetting .modal-body .nav-link {
+    color: #000;
     border: 2px solid #ffffff;
 
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff !important;
-    
-}
-#exampleModalforPageSetting  .modal-content{
+
+/* #exampleModalforPageSetting .modal-content,
+#exampleModalforSiteSetting .modal-content {
     height: 85vh;
-    
-}
-#exampleModalforPageSetting  .modal-body .d-flex .nav{
-    height: 75vh;
-    
+
 }
 
-#exampleModalforPageSetting  .modal-body .description{
-  height: 100px;
+#exampleModalforPageSetting .modal-body .d-flex .nav ,
+#exampleModalforSiteSetting .modal-body .d-flex .nav {
+    height: 75vh;
+
+} */
+
+#exampleModalforPageSetting .modal-body .description ,
+#exampleModalforSiteSetting .modal-body .description {
+    height: 100px;
 }
-#exampleModalforPageSetting  .modal-body #v-pills-html .html-section-textarea,
-#v-pills-css .html-section-textarea{
+
+#exampleModalforPageSetting .modal-body #v-pills-html .html-section-textarea,
+#exampleModalforSiteSetting .modal-body #sv-pills-html .html-section-textarea,
+#v-pills-css .html-section-textarea ,
+#sv-pills-css .html-section-textarea  {
     height: 200px;
 }
-#exampleModalforPageSetting  .social-share-img {
+
+#exampleModalforPageSetting .social-share-img ,
+#exampleModalforSiteSetting .social-share-img {
     overflow: hidden;
 }
 
-#v-pills-Social-Share .card-body p{
-   font-size: .8rem;
+#v-pills-Social-Share .card-body p ,
+#sv-pills-Social-Share .card-body p {
+    font-size: .8rem;
 }
-#v-pills-Social-Share .card{
+
+#v-pills-Social-Share .card ,
+#sv-pills-Social-Share .card {
     width: 18rem;
-     height: 14rem;
+    height: 14rem;
+}
+#sv-pills-white-label input::placeholder{
+    color: #666;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px) {
 
-   #exampleModalforPageSetting .modal-body   .w-25 {
-        width: 30%!important;
+    #exampleModalforPageSetting .modal-body .w-25 ,
+    #exampleModalforSiteSetting .modal-body .w-25{
+        width: 30% !important;
     }
+    
 }
 
 @media screen and (min-width:950px) {
@@ -213,26 +234,37 @@
     }
 }
 
-@media only screen and  (max-width:600px){
-    #exampleModalforPageSetting .modal-body   .w-25 {
-        width: 50%!important;
+@media only screen and (max-width:600px) {
+    #exampleModalforPageSetting .modal-body .w-25 ,
+    #exampleModalforSiteSetting .modal-body .w-25 {
+        width: 50% !important;
     }
-    #exampleModalforPageSetting .modal-body .tab-content .col-8 {
+
+    #exampleModalforPageSetting .modal-body .tab-content .col-8 ,
+    #exampleModalforSiteSetting .modal-body .tab-content .col-8{
         width: 100%;
     }
-    #exampleModalforPageSetting .modal-body .tab-pane .mb-3{
+
+    #exampleModalforPageSetting .modal-body .tab-pane .mb-3 ,
+    #exampleModalforSiteSetting .modal-body .tab-pane .mb-3 {
         margin-bottom: 0rem !important;
 
     }
-    #exampleModalforPageSetting  .modal-body .description{
+
+    #exampleModalforPageSetting .modal-body .description ,
+    #exampleModalforSiteSetting .modal-body .description {
         height: 50px;
-      }
-      #exampleModalforPageSetting #v-pills-seo  .modal-body .col-8 .card-body{
+    }
+
+    #exampleModalforPageSetting #v-pills-seo .modal-body .col-8 .card-body ,
+    #exampleModalforSiteSetting #v-pills-seo .modal-body .col-8 .card-body {
         padding: .5rem;
-      }
-      #exampleModalforPageSetting #v-pills-seo .modal-body .col-8 .card-body h4{
-       font-size: 1rem;
-      }
+    }
+
+    #exampleModalforPageSetting #v-pills-seo .modal-body .col-8 .card-body h4 ,
+    #exampleModalforSiteSetting #v-pills-seo .modal-body .col-8 .card-body h4 {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -244,39 +276,57 @@
     #exampleModalforlanguage .me-4 {
         margin-right: .5rem !important;
     }
+
     #exampleModalforappearance .modal-body i {
         font-size: 8rem;
     }
-    #exampleModalforappearance .modal-body .d-flex .px-3  {
+
+    #exampleModalforappearance .modal-body .d-flex .px-3 {
         padding-left: .5rem !important;
         padding-right: .5rem !important;
-        
+
     }
-    #exampleModalforappearance .modal-body .d-flex .py-2{
+
+    #exampleModalforappearance .modal-body .d-flex .py-2 {
         padding: .3rem !important;
-    } 
-    #exampleModalforPageSetting .modal-body {
-        /* padding: .5rem; */
     }
-    #exampleModalforPageSetting .modal-body .d-flex .pe-5 {
-        padding-right: .5rem!important;
+
+   
+
+    #exampleModalforPageSetting .modal-body .d-flex .pe-5 ,
+    #exampleModalforSiteSetting .modal-body .d-flex .pe-5 {
+        padding-right: .5rem !important;
     }
-    #exampleModalforPageSetting .modal-body button {
+
+    #exampleModalforPageSetting .modal-body button ,
+    #exampleModalforSiteSetting .modal-body button {
         font-size: .8rem;
-        padding:  .3rem .5rem !important;
+        padding: .3rem .5rem !important;
     }
-    #exampleModalforPageSetting  input,
+
+    #exampleModalforPageSetting input,
     #exampleModalforPageSetting p,
-    #exampleModalforPageSetting  label,
-    #exampleModalforPageSetting  textarea {
+    #exampleModalforPageSetting label,
+    #exampleModalforPageSetting textarea,
+    #exampleModalforSiteSetting input,
+    #exampleModalforSiteSetting p,
+    #exampleModalforSiteSetting label,
+    #exampleModalforSiteSetting textarea,
+    #exampleModalforSiteSetting select {
         font-size: .7rem !important;
 
     }
-    #v-pills-Social-Share .card {
+    #exampleModalforSiteSetting .modal-body {
+        padding: 0.5rem;
+    }
+    #v-pills-Social-Share .card ,
+    #sv-pills-Social-Share .card {
         width: 12rem;
         height: 10rem;
-        
+
     }
-    
-    
+    #exampleModalforSiteSetting .modal-body  .d-flex .pe-4 {
+        padding-right: 0.5rem !important;
+    }
+
 }
