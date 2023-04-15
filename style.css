@@ -1,8 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
 * {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .body {
@@ -46,22 +53,18 @@
     font-size: 1.5rem;
 }
 
-.nav-link {
-    color: #fff;
-}
-
-.nav-link:hover {
+.navbar-collapse .nav-link:hover {
     color: #fff;
     background-color: #ffffff32;
 }
 
-input {
+.navbar-collapse input {
     background-color: #ffffff35 !important;
     color: #fff !important;
     border: none !important;
 }
 
-input::placeholder {
+.navbar-collapse input::placeholder {
     color: #fff !important;
 }
 
@@ -80,37 +83,104 @@ input::placeholder {
     padding: .5rem;
 
 }
-.dropstart:hover > .dropdown-menu{
+
+.dropstart:hover > .dropdown-menu {
     position: absolute;
     top: 0;
-    right: 100% ;
-  }
-.user{
+    right: 100%;
+}
+
+.user {
     /* left: -8rem !important; */
     width: 20rem;
 }
 
+#exampleModalforlanguage .modal-body .bxs-crown {
+    font-size: 8rem;
+}
+
+#exampleModalforappearance .modal-body i {
+    font-size: 10rem;
+}
+
+#exampleModalforappearance .modal-body .d-flex div {
+    transition: .2s all ease-in-out;
+    border: 2px solid #fff;
+}
+
+#exampleModalforappearance .modal-body .d-flex div:hover,
+#exampleModalforPageSetting .modal-body .nav-link:hover {
+    border: 2px solid #047dff;
+}
+
+#exampleModalforPageSetting .modal-body .nav-link{
+    color: #000 ;
+    border: 2px solid #ffffff;
+
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+    
+}
+#exampleModalforPageSetting  .modal-content{
+    height: 85vh;
+    
+}
+#exampleModalforPageSetting  .modal-body .d-flex .nav{
+    height: 75vh;
+    
+}
+
+#exampleModalforPageSetting  .modal-body .description{
+  height: 100px;
+}
+#exampleModalforPageSetting  .modal-body #v-pills-html .html-section-textarea,
+#v-pills-css .html-section-textarea{
+    height: 200px;
+}
+#exampleModalforPageSetting  .social-share-img {
+    overflow: hidden;
+}
+
+#v-pills-Social-Share .card-body p{
+   font-size: .8rem;
+}
+#v-pills-Social-Share .card{
+    width: 18rem;
+     height: 14rem;
+}
+
+@media screen and (max-width:1024px){
+
+   #exampleModalforPageSetting .modal-body   .w-25 {
+        width: 30%!important;
+    }
+}
 
 @media screen and (min-width:950px) {
-    .dropdown .dropdown-menu{
+    .dropdown .dropdown-menu {
         display: none;
         right: 0rem;
-      }
-      
-      .dropstart .dropdown-menu{
+    }
+
+    .dropstart .dropdown-menu {
         display: none;
-      }
-      .dropdown:hover > .dropdown-menu, .dropstart:hover > .dropdown-menu{
+    }
+
+    .dropdown:hover > .dropdown-menu,
+    .dropstart:hover > .dropdown-menu {
         display: block;
         margin-top: .125em;
         margin-left: .125em;
-      }
-      .dropstart:hover > .dropdown-menu{
+    }
+
+    .dropstart:hover > .dropdown-menu {
         position: absolute !important;
         top: 0;
         right: 100% !important;
-      }
-      .dropdown:focus > .dropdown-menu {
+    }
+
+    .dropdown:focus > .dropdown-menu {
         display: block !important;
         margin-top: 0.125em;
         margin-left: 0.125em;
@@ -141,4 +211,72 @@ input::placeholder {
         width: 90%;
         margin: 0rem !important;
     }
+}
+
+@media only screen and  (max-width:600px){
+    #exampleModalforPageSetting .modal-body   .w-25 {
+        width: 50%!important;
+    }
+    #exampleModalforPageSetting .modal-body .tab-content .col-8 {
+        width: 100%;
+    }
+    #exampleModalforPageSetting .modal-body .tab-pane .mb-3{
+        margin-bottom: 0rem !important;
+
+    }
+    #exampleModalforPageSetting  .modal-body .description{
+        height: 50px;
+      }
+      #exampleModalforPageSetting #v-pills-seo  .modal-body .col-8 .card-body{
+        padding: .5rem;
+      }
+      #exampleModalforPageSetting #v-pills-seo .modal-body .col-8 .card-body h4{
+       font-size: 1rem;
+      }
+}
+
+@media screen and (max-width: 450px) {
+    #exampleModalforlanguage .modal-body .bxs-crown {
+        font-size: 4rem;
+    }
+
+
+    #exampleModalforlanguage .me-4 {
+        margin-right: .5rem !important;
+    }
+    #exampleModalforappearance .modal-body i {
+        font-size: 8rem;
+    }
+    #exampleModalforappearance .modal-body .d-flex .px-3  {
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
+        
+    }
+    #exampleModalforappearance .modal-body .d-flex .py-2{
+        padding: .3rem !important;
+    } 
+    #exampleModalforPageSetting .modal-body {
+        /* padding: .5rem; */
+    }
+    #exampleModalforPageSetting .modal-body .d-flex .pe-5 {
+        padding-right: .5rem!important;
+    }
+    #exampleModalforPageSetting .modal-body button {
+        font-size: .8rem;
+        padding:  .3rem .5rem !important;
+    }
+    #exampleModalforPageSetting  input,
+    #exampleModalforPageSetting p,
+    #exampleModalforPageSetting  label,
+    #exampleModalforPageSetting  textarea {
+        font-size: .7rem !important;
+
+    }
+    #v-pills-Social-Share .card {
+        width: 12rem;
+        height: 10rem;
+        
+    }
+    
+    
 }

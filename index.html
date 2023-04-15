@@ -27,9 +27,9 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
                 <div class="d-flex starter">
-                    <a class="nav-link red-tooltip " href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="My Sites">&#8249;Sites</a>
-                    <a class="nav-link px-1 me-4" href="#">Page:Home</a>
+                    <a class="nav-link red-tooltip  text-light" href="#" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="My Sites">&#8249;Sites</a>
+                    <a class="nav-link px-1 me-4 text-light" href="#">Page:Home</a>
                     <div class="input-group  me-3 ">
                         <span class="input-group-text" id="addon-wrapping"><i class='bx bx-search'></i></span>
                         <input type="text" class="form-control" placeholder="Find everything" aria-label="Username"
@@ -66,31 +66,39 @@
                         <button class="btn mybtn d-flex align-content-center flex-wrap justify-content-center"
                             data-bs-toggle="tooltip" data-bs-placement="bottom" title="Publish"><i
                                 class='bx bx-cloud-upload pe-1'></i> Publish</button>
-                        <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Preview"><i
-                                class='bx bx-file-find'></i></button>
+                        <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Preview">
+                            <i class='bx bx-file-find'></i>
+                        </button>
+                        <!--setting section-->
                         <div class="dropdown">
-                            <button class="btn mybtn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-auto-close="outside"
-                                aria-expanded="false">
+                            <button class="btn mybtn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" aria-expanded="false">
                                 <i class='bx bx-cog'></i>
                             </button>
                             <ul class="dropdown-menu p-0 " aria-labelledby="dropdownMenuButton1">
                                 <li><a class="dropdown-item " href="#">Site Setting...</a></li>
-                                <li><a class="dropdown-item " href="#">Page Setting..</a></li>
+
+                                <li><a class="dropdown-item " href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModalforPageSetting "> Page Setting..
+                                    </a>
+                                </li>
+
                                 <li class="d-flex align-items-center justify-content-between">
-                                    <a class="dropdown-item " href="#">
+                                    <a class="dropdown-item " href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModalforlanguage">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <p class="p-0 m-0">Site Language...</p>
                                             <i class='bx bxs-crown pe-1' style="color: goldenrod;"></i>
                                         </div>
                                     </a>
-
                                 </li>
                                 <li>
                                     <a class="dropdown-item my-2" href="#">
                                         <h5 class="p-0 m-0 text-secondary">APPLICATION</h5>
                                     </a>
                                 </li>
-                                <li><a class="dropdown-item " href="#">
+                                <li><a class="dropdown-item " href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModalforappearance">
                                         <div class="d-flex align-items-center">
                                             <i class='bx bxs-moon fs-4 me-2'></i>
                                             <p class="p-0 m-0"> Appearance </p>
@@ -118,76 +126,334 @@
                                 </li>
                             </ul>
                         </div>
+                        <!--setting section ended-->
                     </li>
                     <li class="nav-item border-start d-flex align-items-center flex-wrap ">
-                        <button class="btn mybtn d-flex " data-bs-toggle="tooltip" data-bs-placement="bottom" 
+                        <button class="btn mybtn d-flex " data-bs-toggle="tooltip" data-bs-placement="bottom"
                             title="Premium"><i class='bx bxs-crown pe-1' style="color: goldenrod;"></i> Premium</button>
+                        <!--user section-->
                         <div class="dropdown ">
-                            <button class="btn mybtn " type="button" id="dropdownMenu2" data-bs-toggle="dropdown" data-bs-auto-close="outside"
-                                aria-expanded="false">
+                            <button class="btn mybtn " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside" aria-expanded="false">
                                 <i class='bx bx-user'></i>
                             </button>
                             <ul class="dropdown-menu user p-0 " aria-labelledby="dropdownMenu2">
                                 <li><a class="dropdown-item p-1" href="#">NISHANT Rajput </br>
-                                    nishantrajputa11@gmail.com</a></li>
+                                        nishantrajputa11@gmail.com</a></li>
                                 <li class="d-flex align-items-center justify-content-between">
-                                    <a class="dropdown-item p-1 align-items-center d-flex " href="#"><i class='bx bxs-bar-chart-alt-2 fs-2 me-2'></i>Leads</a>
+                                    <a class="dropdown-item p-1 align-items-center d-flex " href="#"><i
+                                            class='bx bxs-bar-chart-alt-2 fs-2 me-2'></i>Leads</a>
                                 </li>
-                             
-                                <li> <a class="dropdown-item p-1 align-items-center d-flex  my-2" href="#"><i class='bx bx-check-circle fs-2 me-2'></i>Activate</a></li>
+
+                                <li> <a class="dropdown-item p-1 align-items-center d-flex  my-2" href="#"><i
+                                            class='bx bx-check-circle fs-2 me-2'></i>Activate</a></li>
                                 <li class="d-flex align-items-center justify-content-between">
-                                    <a class="dropdown-item p-1 align-items-center d-flex " href="#"><i class='bx bx-star fs-2 me-2' ></i>Licenses</a>
+                                    <a class="dropdown-item p-1 align-items-center d-flex " href="#"><i
+                                            class='bx bx-star fs-2 me-2'></i>Licenses</a>
                                 </li>
-                                <li><a class="dropdown-item p-1 align-items-center d-flex" href="#"><i class='bx bx-chat fs-2 me-2'></i>Support Issues</a></li>
-                                <li><a class="dropdown-item p-1 align-items-center d-flex " href="#">  <i class='bx bx-cog fs-2 me-2'></i>Profile</a></li>
+                                <li><a class="dropdown-item p-1 align-items-center d-flex" href="#"><i
+                                            class='bx bx-chat fs-2 me-2'></i>Support Issues</a></li>
+                                <li><a class="dropdown-item p-1 align-items-center d-flex " href="#"> <i
+                                            class='bx bx-cog fs-2 me-2'></i>Profile</a></li>
                                 <li class="dropstart">
-                                    <a class="dropdown-item p-1 d-flex justify-content-between align-items-center" href="#"
-                                        data-bs-toggle="dropdown" aria-expanded="false" >
-                                            <p class="p-0 m-0 align-items-center d-flex"> <i class='bx bx-download fs-2 me-2 '></i>Download </p>
-                                            <i class='bx bx-chevron-right fs-2' ></i>
-                                    
+                                    <a class="dropdown-item p-1 d-flex justify-content-between align-items-center"
+                                        href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <p class="p-0 m-0 align-items-center d-flex"> <i
+                                                class='bx bx-download fs-2 me-2 '></i>Download </p>
+                                        <i class='bx bx-chevron-right fs-2'></i>
+
                                     </a>
                                     <ul class="dropdown-menu p-0">
-                                        <li><a class="dropdown-item p-1 align-items-center d-flex" href="#">Desktop Application</a></li>
-                                        <li><a class="dropdown-item p-1 align-items-center d-flex" href="#">WordPress Plugin</a></li>
-                                        <li><a class="dropdown-item p-1 align-items-center d-flex" href="#">Joomla Plugin</a></li>
+                                        <li><a class="dropdown-item p-1 align-items-center d-flex" href="#">Desktop
+                                                Application</a></li>
+                                        <li><a class="dropdown-item p-1 align-items-center d-flex" href="#">WordPress
+                                                Plugin</a></li>
+                                        <li><a class="dropdown-item p-1 align-items-center d-flex" href="#">Joomla
+                                                Plugin</a></li>
                                     </ul>
                                 </li>
-                                <li><a class="dropdown-item p-1 align-items-center d-flex " href="#"><i class='bx bx-exit fs-2 me-2'></i>SignOut</a> </li>
+                                <li><a class="dropdown-item p-1 align-items-center d-flex " href="#"><i
+                                            class='bx bx-exit fs-2 me-2'></i>SignOut</a> </li>
                             </ul>
                         </div>
+                        <!--user section ended-->
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!--side bar-->
+    <!--======================================================================================================================================
+       ----------------------------              popup modals section                 ---------------------------------------------
+     =======================================================================================================================================-->
+
+    <!-- Modal for language setting  -->
+    <div class="modal fade" id="exampleModalforlanguage" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered .modal-fullscreen-lg-down modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-1 d-flex justify-content-center align-items-center">
+                    <div class="me-4">
+                        <i class='bx bxs-crown ' style="color: goldenrod;"></i>
+                    </div>
+                    <div>
+                        <h5 class="modal-title fw-bolder mb-2" id="exampleModalLabel">Premium Plan</h5>
+                        <p>To use this feature the BUSINESS,PRO or ULTIMATE license is required.</p>
+                        <p>Seel all <a href="$"> Preimum features</a></p>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer p-2 justify-content-center border-0">
+                    <button type="button" class="btn btn-primary me-2">Get Premium Plan</button>
+                    <button type="button" class="btn btn-outline-dark " data-bs-dismiss="modal">Cancel</button>
+                </div>
+                <p class="text-center">I have a license, <a href="#">activate now</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for language setting ended -->
+    <!-- Modal for appearance -->
+    <div class="modal fade" id="exampleModalforappearance" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header p-2">
+                    <h5 class="modal-title">Appearance</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-2 ">
+                    <p>select a light or dark appearance for the User interface depending on your working environment
+                        preferences
+                    </p>
+                    <div class="d-flex justify-content-center text-center gap-3">
+                        <div class="px-3 py-2">
+                            <i class='bx bx-image'></i>
+                            <h6 class="p-0 m-0">LIGHT MODE</h6>
+                        </div>
+                        <div class="px-3 py-2">
+                            <i class='bx bxs-image'></i>
+                            <h6 class="p-0 m-0">DARK MODE</h6>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer p-2 pb-2 justify-content-center border-0">
+                    <button type="button" class="btn btn-primary " data-bs-dismiss="modal">Continue</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal for appearance ended-->
+    <!-- Modal for Page setting -->
+    <div class="modal fade" id="exampleModalforPageSetting" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl ">
+            <div class="modal-content">
+                <div class="modal-header border-0 py-2  ">
+                    <h5 class="modal-title">Page Setting</h5>
+                    <div>
+                        <button type="button" class="btn btn-primary  me-3 py-1 " data-bs-dismiss="modal">Done</button>
+                        <button type="button" class="btn btn-outline-dark py-1" data-bs-dismiss="modal">X</button>
+                    </div>
+
+                </div>
+                <div class="modal-body  ">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3 border-end border-2  pe-5 w-25" id="v-pills-tab"
+                            role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active text-start my-2" id="v-pills-general-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-general" type="button" role="tab"
+                                aria-controls="v-pills-general" aria-selected="true">General</button>
+                            <button class="nav-link text-start my-2 " id="v-pills-seo-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-seo" type="button" role="tab" aria-controls="v-pills-seo"
+                                aria-selected="false">SEO</button>
+                            <button class="nav-link text-start my-2" id="v-pills-Social-Share-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-Social-Share" type="button" role="tab"
+                                aria-controls="v-pills-Social-Share" aria-selected="false">Social Share</button>
+                            <button class="nav-link text-start my-2" id="v-pills-html-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-html" type="button" role="tab" aria-controls="v-pills-html"
+                                aria-selected="false">HTML</button>
+                            <button class="nav-link text-start my-2" id="v-pills-css-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-css" type="button" role="tab" aria-controls="v-pills-css"
+                                aria-selected="false">CSS </button>
+                        </div>
+                        <div class="tab-content w-100" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel"
+                                aria-labelledby="v-pills-general-tab">
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Page Name</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" value="Page 2">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Page Password</label>
+                                    <div class="col-8">
+                                        <input type="password" class="form-control" id="inputPassword"
+                                            placeholder="Password">
+                                        <p class="p-0 my-2">Allow only a users with a password to visit this page</p>
+                                        <button type="button" class="btn btn-outline-dark mt-3">Make Homepage</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-seo" role="tabpanel"
+                                aria-labelledby="v-pills-seo-tab">
+                                <div class="mb-3 row">
+                                    <label for="staticEmail" class="col-sm-3 col-form-label">Preview</label>
+                                    <div class="col-8">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <p class="p-0 my-1">https://example.com>Page2</p>
+                                                <h4 class="text-primary">Page 2 </h4>
+                                                <p class="text-secondary m-0 p-0">Meta description</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Title</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" value="Page 2">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Description</label>
+                                    <div class="col-8">
+                                        <textarea class="form-control description" ></textarea>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="my-1">Advanced Setting</h6>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Canonical</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Keywords</label>
+                                    <div class="col-8">
+                                        <textarea class="form-control mb-1" style="height: 55px" placeholder="INTUITIVE, Your design is your passion, Key Features, Pricing Plan, Empire State Building"></textarea>
+                                        <div class="form-check mt-2">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Don't show the page in search result
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-Social-Share" role="tabpanel"
+                                aria-labelledby="v-pills-Social-Share-tab">
+                                <div>
+                                    <p class="fw-bolder m-0">Open Graph</p>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Preview</label>
+                                    <div class="col-8 d-flex align-items-start flex-wrap gap-2">
+                                        <div class="card" >
+                                            <div class="social-share-img">
+                                                <img src="./imgs/no.jpg" class="card-img-top " alt="No image">
+                                            </div>
+                                          
+                                            <div class="card-body py-1 px-2">
+                                                <p class="card-text m-0 text-secondary">EXAMPLE.COM</p>
+                                              <h6 class="card-title m-0">Page Title</h6>
+                                              <p class="card-text m-0 text-secondary">Page Desciption</p>
+                                             
+                                            </div>
+                                          </div>
+                                          <button type="button" class="btn btn-outline-dark mb-3">Image</button>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Title</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Description</label>
+                                    <div class="col-8">
+                                        <textarea class="form-control description" ></textarea>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">URL</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-html" role="tabpanel"
+                                aria-labelledby="v-pills-html-tab">
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Meta Tags</label>
+                                    <div class="col-8">
+                                        <textarea class="form-control html-section-textarea" ></textarea>
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label class="col-sm-3 col-form-label">Additional Head HTML</label>
+                                    <div class="col-8">
+                                        <textarea class="form-control html-section-textarea" ></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-css" role="tabpanel"
+                                aria-labelledby="v-pills-css-tab">
+                                <div class="col-8">
+                                    <textarea class="form-control html-section-textarea" ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Page setting section ended -->
+
 
     <div>
+        <!--side bar-->
         <div class=" bg-dark position-fixed h-100 sidebar">
             <div class="d-flex flex-column   mt-2">
                 <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right"
-                title="Add Blocks and Elements"><i class='bx bxs-plus-circle bx-flip-horizontal'
-                    style='color:#006eff'></i></button>
-            <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Pages"><i
-                    class='bx bxs-file-blank'></i></button>
-            <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Blog Posts"><i
-                    class='bx bxs-message-detail'></i></button>
-            <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Modal Popups"><i
-                    class='bx bx-detail'></i></button>
-            <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right"
-                title="Site Colors & Fonts"><i class='bx bxs-palette'></i></button>
-            <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Templates"><i
-                    class='bx bxs-layout'></i></button>
-            <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Media"><i
-                    class='bx bxs-image'></i></button>
-            <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right"
-                title="Page & Site Setting"> <i class='bx bxs-cog'></i></button>
-            <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Help"><i
-                    class='bx bxs-help-circle'></i></button>
+                    title="Add Blocks and Elements"><i class='bx bxs-plus-circle bx-flip-horizontal'
+                        style='color:#006eff'></i></button>
+                <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Pages"><i
+                        class='bx bxs-file-blank'></i></button>
+                <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Blog Posts"><i
+                        class='bx bxs-message-detail'></i></button>
+                <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Modal Popups"><i
+                        class='bx bx-detail'></i></button>
+                <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Site Colors & Fonts"><i class='bx bxs-palette'></i></button>
+                <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Templates"><i
+                        class='bx bxs-layout'></i></button>
+                <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Media"><i
+                        class='bx bxs-image'></i></button>
+                <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Page & Site Setting"> <i class='bx bxs-cog'></i></button>
+                <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="right" title="Help"><i
+                        class='bx bxs-help-circle'></i></button>
             </div>
         </div>
+
+        <!--side bar ended -->
+
         <!-- <div class="container-fluid h-100 w-100">
             <h1>jhjfhfghhdt dndf hfkbv db vb rfnb fnfbh</h1>
             
