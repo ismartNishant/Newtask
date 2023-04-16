@@ -328,14 +328,14 @@
         padding: .5rem;
     }
 
-    #exampleModalforPublish a,
+    /* #exampleModalforPublish a,
     #exampleModalforPublish button {
         font-size: .5rem;
         padding: .2rem .4rem;
-    }
-    #exampleModalforPublish a .bxs-video{
+    } */
+    /* #exampleModalforPublish a .bxs-video{
         font-size: .75rem !important;
-    }
+    } */
 }
 
 @media screen and (max-width: 450px) {
