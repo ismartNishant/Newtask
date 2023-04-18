@@ -32,117 +32,199 @@
     background: #02c0ff;
 }
 
+.add-blocks label {
+    cursor: pointer
+}
 
-.sidebar,.sidebar2,
-.sidebar3{
+.sidebar .add-blocks .blocks-container {
+    position: fixed;
+    z-index: 5;
+    top: 3rem;
+    left: 2.5rem;
+    height: 100vh;
+    width: 18rem;
+    display: none;
+    transition: all 0.3s ease;
+}
+.add-blocks label .bx-x {
+    display: none;
+}
+
+#add-blocks-and-element,
+#add-pages,
+#add-blog-posts,
+#add-modal-popups ,
+#site-colors-and-fonts,
+#add-templates,
+#add-Media,
+#settings,
+#help{
+    display: none;
+    z-index: 3;
+}
+
+#add-blocks-and-element:checked ~ .blocks-container,
+#add-pages:checked ~ .blocks-container,
+#add-blog-posts:checked ~ .blocks-container,
+#add-modal-popups:checked ~ .blocks-container ,
+#site-colors-and-fonts:checked ~ .blocks-container,
+#add-templates:checked ~ .blocks-container,
+#add-Media:checked ~ .blocks-container,
+#settings:checked ~ .blocks-container,
+#help:checked ~ .blocks-container{
+    display: block;
+}
+
+#add-blocks-and-element:checked ~ label .bx-x,
+#add-pages:checked ~ label .bx-x,
+#add-blog-posts:checked ~ label .bx-x,
+#add-modal-popups:checked ~ label .bx-x ,
+#site-colors-and-fonts:checked ~ label .bx-x,
+#add-templates:checked ~ label .bx-x ,
+#add-Media:checked ~ label .bx-x,
+#settings:checked ~ label .bx-x ,
+#help:checked ~ label .bx-x
+  {
+    z-index: 5;
+    display: block;
+    position: fixed;
+    left: 21rem;
+    top: 3.2rem;
+
+}
+
+.blocks-container .list-group .bxs-right-arrow {
+    font-size: .5rem !important;
+}
+
+.sidebar,
+.sidebar2,
+.sidebar3 {
     width: 2.5rem;
     height: 100vh;
 }
-.sidebar2 .inner-sidebar nav button{
-    border: 2px solid  #ebe8e8;;
+
+.sidebar2 .inner-sidebar nav button {
+    border: 2px solid #ebe8e8;
+    ;
 
 }
-/* .sidebar2 #nav-blocks {
-    height: 80vh !important;
-} */
-.sidebar2 .blocks-scroll-content{
+
+.sidebar2 .blocks-scroll-content {
 
     height: 72vh;
     overflow: scroll;
 }
-.blocks-scroll-content div{
+
+.blocks-scroll-content div {
     width: 8rem;
     overflow: hidden;
 }
-.blocks-scroll-content .list-group-item{
-    padding: .35rem ;
+
+.blocks-scroll-content .list-group-item {
+    padding: .35rem;
 }
-.blocks-scroll-content div img{
+
+.blocks-scroll-content div img {
     width: 100%;
-    height:  auto;
+    height: auto;
 }
-.sidebar2 .inner-sidebar nav button:hover{
+.add-blocks .add-media-img img{
+    width:7rem;
+    object-fit: cover;
+    height: 4rem;
+}
+
+.sidebar2 .inner-sidebar nav button:hover {
     border: 2px solid #0191ff;
     background-color: #0191ff48;
 }
-.sidebar2 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+
+.sidebar2 .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
     background-color: #0191ff;
     color: #fff !important;
 }
 
 
 .sidebar2 label,
-.sidebar3 label{
+.sidebar3 label {
     cursor: pointer;
 }
+
 .sidebar2 label:hover,
-.sidebar3 label:hover{
-color: #047dff;
+.sidebar3 label:hover {
+    color: #047dff;
 }
 
 
- #sideclick,
- #sideclick2{
+#sideclick,
+#sideclick2 {
     display: none;
     z-index: 3;
 }
-.sidebar2 .inner-sidebar{
+
+.sidebar2 .inner-sidebar {
     position: absolute;
     display: none;
-    left:-100%;
+    left: -100%;
     background: #fff;
     height: 100vh;
     width: 12rem;
-    transition: all 0.3s  ease;
+    transition: all 0.3s ease;
 }
-.sidebar3 .inner-sidebar{
+
+.sidebar3 .inner-sidebar {
     position: absolute;
     display: none;
-    right:-100%;
+    right: -100%;
     background: #fff;
     height: 100vh;
     width: 15rem;
-    transition: all 0.3s  ease;
+    transition: all 0.3s ease;
 }
 
-   
+
 #sideclick:checked ~ .inner-sidebar {
-    left:0%;
-    display: block;
-}
-   
-#sideclick2:checked ~ .inner-sidebar {
-    right:0%;
+    left: 0%;
     display: block;
 }
 
-.sidebar2 label ,
-.sidebar3 label{
+#sideclick2:checked ~ .inner-sidebar {
+    right: 0%;
+    display: block;
+}
+
+.sidebar2 label,
+.sidebar3 label {
     display: block;
 }
 
 .sidebar2 label .bx-chevrons-left,
-.sidebar3 label .bx-chevrons-right{
-    display:none;
+.sidebar3 label .bx-chevrons-right {
+    display: none;
 }
 
 #sideclick:checked ~ label .bx-chevrons-right,
-#sideclick2:checked ~ label .bx-chevrons-left{
+#sideclick2:checked ~ label .bx-chevrons-left {
     display: none !important;
 }
+
 #sideclick:checked ~ label .bx-chevrons-left {
-    z-index:2;
+    z-index: 2;
     display: block;
     position: absolute;
     left: 9.5rem;
 }
-#sideclick2:checked ~ label  .bx-chevrons-right{
+
+#sideclick2:checked ~ label .bx-chevrons-right {
     display: block !important;
     z-index: 2;
     right: 12.5rem;
 }
- .sidebar2 label .bx-chevrons-right ,
- .sidebar3 label .bx-chevrons-right{
+
+.sidebar2 label .bx-chevrons-right,
+.sidebar3 label .bx-chevrons-right {
     position: absolute;
 }
 
@@ -151,9 +233,10 @@ color: #047dff;
     background: #fff;
 }
 
-.main-section{
-    background-color:#dbdde0 ;
+.main-section {
+    background-color: #dbdde0;
 }
+
 .mybtn {
     border: none;
     border-radius: 0rem;
@@ -164,7 +247,6 @@ color: #047dff;
 
 .tooltip-arrow {
     display: none !important;
-    /*border-top-color: transparent !important;*/
 }
 
 .tooltip-inner {
@@ -173,7 +255,6 @@ color: #047dff;
     color: #000;
     box-shadow: 1px 1px 5px #000000;
 }
-
 
 .mybtn:hover {
     background: #ffffff32;
@@ -200,7 +281,7 @@ color: #047dff;
     color: #fff !important;
 }
 
-.input-group span {
+.navbar .input-group span {
     background-color: #ffffff35 !important;
     border: none !important;
     color: #fff !important;
@@ -213,7 +294,6 @@ color: #047dff;
 
 .dropdown-item {
     padding: .5rem;
-
 }
 
 .dropstart:hover > .dropdown-menu {
@@ -223,14 +303,12 @@ color: #047dff;
 }
 
 .user {
-    /* left: -8rem !important; */
     width: 20rem;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
     color: #fff !important;
-
 }
 
 #exampleModalforlanguage .modal-body .bxs-crown {
@@ -259,20 +337,8 @@ color: #047dff;
 #exampleModalforPublish .modal-body .nav-link {
     color: #000;
     border: 2px solid #ffffff;
-
 }
 
-/* #exampleModalforPageSetting .modal-content,
-#exampleModalforSiteSetting .modal-content {
-    height: 85vh;
-
-}
-
-#exampleModalforPageSetting .modal-body .d-flex .nav ,
-#exampleModalforSiteSetting .modal-body .d-flex .nav {
-    height: 75vh;
-
-} */
 #exampleModalforPublish label,
 #exampleModalforPublish input,
 #exampleModalforPublish a,
@@ -323,9 +389,9 @@ color: #047dff;
 #sv-pills-white-label input::placeholder {
     color: #666;
 }
-
-
-
+/*---------------------------------------------------------------------------------------------
+                                      media Queries
+  -----------------------------------------------------------------------------------------------*/
 @media screen and (max-width:1024px) {
 
     #exampleModalforPageSetting .modal-body .w-25,
@@ -362,7 +428,6 @@ color: #047dff;
         display: block !important;
         margin-top: 0.125em;
         margin-left: 0.125em;
-
     }
 
 }
@@ -378,7 +443,6 @@ color: #047dff;
 
     .starter {
         flex-direction: column;
-
     }
 
     .navbar-nav .nav-item {
@@ -438,21 +502,26 @@ color: #047dff;
         padding: .5rem;
     }
 
-    /* #exampleModalforPublish a,
-    #exampleModalforPublish button {
-        font-size: .5rem;
-        padding: .2rem .4rem;
-    } */
-    /* #exampleModalforPublish a .bxs-video{
-        font-size: .75rem !important;
-    } */
 }
 
 @media screen and (max-width: 450px) {
+    #add-blocks-and-element:checked ~ label .bx-x,
+#add-pages:checked ~ label .bx-x,
+#add-blog-posts:checked ~ label .bx-x,
+#add-modal-popups:checked ~ label .bx-x ,
+#site-colors-and-fonts:checked ~ label .bx-x,
+#add-templates:checked ~ label .bx-x ,
+#add-Media:checked ~ label .bx-x,
+#settings:checked ~ label .bx-x ,
+#help:checked ~ label .bx-x {
+    left: 20rem;
+}
+    .sidebar .add-blocks .blocks-container {
+        width: 17rem;
+    }
     #exampleModalforlanguage .modal-body .bxs-crown {
         font-size: 4rem;
     }
-
 
     #exampleModalforlanguage .me-4 {
         margin-right: .5rem !important;
@@ -471,8 +540,6 @@ color: #047dff;
     #exampleModalforappearance .modal-body .d-flex .py-2 {
         padding: .3rem !important;
     }
-
-
 
     #exampleModalforPageSetting .modal-body .d-flex .pe-5,
     #exampleModalforSiteSetting .modal-body .d-flex .pe-5 {
@@ -506,7 +573,6 @@ color: #047dff;
     #sv-pills-Social-Share .card {
         width: 12rem;
         height: 10rem;
-
     }
 
     #exampleModalforSiteSetting .modal-body .d-flex .pe-4 {
@@ -525,10 +591,9 @@ color: #047dff;
     #pills-HTML .d-flex button {
         font-size: .8rem;
     }
-    .sidebar2 .blocks-scroll-content{
 
+    .sidebar2 .blocks-scroll-content {
         height: 70vh;
-        /* overflow: scroll; */
     }
 
     .sidebar3 label,
@@ -536,8 +601,8 @@ color: #047dff;
     .sidebar3 button,
     .sidebar3 a {
         font-size: .8rem !important;
-
     }
+
     .sidebar3 .p-2 {
         padding: 0.3rem .5rem !important;
     }
