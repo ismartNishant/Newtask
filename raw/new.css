@@ -1,41 +1,693 @@
-.navbar-nav .nav-link{
-    color: #2518b7;
-  }
-  .dropstart .dropdown-toggle{
-    color: salmon;
-    margin-left: 1em;
-  }
-  .dropdown-item:hover{
-    background-color: lightsalmon;
-    color: #168f37;
-  }
-  .dropdown .dropdown-menu{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0191ff;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #02c0ff;
+}
+
+.add-blocks label {
+    cursor: pointer
+}
+
+.sidebar .add-blocks .blocks-container {
+    position: fixed;
+    z-index: 5;
+    top: 3rem;
+    left: 2.5rem;
+    height: 100vh;
+    width: 18rem;
     display: none;
-  }
-  .dropdown:hover > .dropdown-menu, .dropstart:hover > .dropdown-menu{
+    transition: all 0.3s ease;
+}
+.add-blocks label .bx-x {
+    display: none;
+}
+.blocks-container .list-group li{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.navbar{
+    z-index: 0 !important;
+}
+
+.hover-on-page {
+    background: #fff;
+    display: none;
+    z-index: 15 !important;
+    height: 100vh;
+    top: 0%;
+    width: 18rem;
+    left: 18rem;
+}
+.home-elements{
+    background: #fff;
+    display: none;
+    z-index: 20 !important;
+    height: 100vh;
+    top: 0%;
+    width: 22rem;
+    left: 36rem;
+}
+.inner-img-big{
+    background: #9e4444;
+    display: none;
+    z-index: 30 !important;
+    height: 100vh !important;
+    top: 0%;
+    width: 35rem !important;
+    left: 40rem;
+}
+.page-elements div{
+    width: 10rem;
+    height: 15rem;
+}
+.page-elements div img{
+    width: 100%;
+    object-fit: cover;
+    height: 15rem;
+}
+.hover-on-page .list-group .list-group-item div{
+    width: 6rem ;
+    
+}
+.hover-on-page .list-group .list-group-item div img{
+    width: 100% ;
+    height: 2.5rem;
+    object-fit: cover;
+}
+.hover-on-page .list-group .list-group-item-action{
+    border: 2px solid #fff !important;
+}
+.hover-on-page .list-group .list-group-item-action:hover{
+    border: 2px solid #0191ff !important;
+    background-color: #0191ff3a;
+}
+.page:hover  .hover-on-page{
     display: block;
-    margin-top: .125em;
-    margin-left: .125em;
-  }
+}
+.home-expand:hover + .home-elements{
+    display: block;
 
-  @media screen and (min-width:769px) {
-    .dropstart:hover > .dropdown-menu{
-      position: absolute;
-      top: 0;
-      right: 100%;
-    }
-    .dropstart .dropdown-toggle{
-      margin-left: .5em;
-    }
-  }
+}
+.img-big:hover  .inner-img-big{
+    display: block !important;
+}
+.blocks-container .list-group li:hover{
+    background-color: #e7eaee;
+}
 
-  @media screen and (max-width:769px) {
-    .dropstart:hover > .dropdown-menu{
-      position: absolute;
-      left: 0%;
-      top: 2rem;
+#add-blocks-and-element,
+#add-pages,
+#add-blog-posts,
+#add-modal-popups ,
+#site-colors-and-fonts,
+#add-templates,
+#add-Media,
+#settings,
+#help{
+    display: none;
+    z-index: 3;
+}
+
+#add-blocks-and-element:checked ~ .blocks-container,
+#add-pages:checked ~ .blocks-container,
+#add-blog-posts:checked ~ .blocks-container,
+#add-modal-popups:checked ~ .blocks-container ,
+#site-colors-and-fonts:checked ~ .blocks-container,
+#add-templates:checked ~ .blocks-container,
+#add-Media:checked ~ .blocks-container,
+#settings:checked ~ .blocks-container,
+#help:checked ~ .blocks-container{
+    display: block;
+}
+
+#add-blocks-and-element:checked ~ label .bx-x,
+#add-pages:checked ~ label .bx-x,
+#add-blog-posts:checked ~ label .bx-x,
+#add-modal-popups:checked ~ label .bx-x ,
+#site-colors-and-fonts:checked ~ label .bx-x,
+#add-templates:checked ~ label .bx-x ,
+#add-Media:checked ~ label .bx-x,
+#settings:checked ~ label .bx-x ,
+#help:checked ~ label .bx-x
+  {
+    z-index: 5;
+    display: block;
+    position: fixed;
+    left: 21rem;
+    top: 3.2rem;
+
+}
+
+.blocks-container .list-group .bxs-right-arrow {
+    font-size: .5rem !important;
+}
+
+.sidebar,
+.sidebar2,
+.sidebar3 {
+    width: 2.5rem;
+    height: 100vh;
+}
+
+.sidebar2 .inner-sidebar nav button {
+    border: 2px solid #ebe8e8;
+    ;
+
+}
+
+.sidebar2 .blocks-scroll-content {
+
+    height: 72vh;
+    overflow: scroll;
+}
+
+.blocks-scroll-content div {
+    width: 8rem;
+    overflow: hidden;
+}
+
+.blocks-scroll-content .list-group-item {
+    padding: .35rem;
+}
+
+.blocks-scroll-content div img {
+    width: 100%;
+    height: auto;
+}
+.add-blocks .add-media-img img{
+    width:7rem;
+    object-fit: cover;
+    height: 4rem;
+}
+
+.sidebar2 .inner-sidebar nav button:hover {
+    border: 2px solid #0191ff;
+    background-color: #0191ff48;
+}
+
+.sidebar2 .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: #0191ff;
+    color: #fff !important;
+}
+
+
+.sidebar2 label,
+.sidebar3 label {
+    cursor: pointer;
+}
+
+.sidebar2 label:hover,
+.sidebar3 label:hover {
+    color: #047dff;
+}
+
+
+#sideclick,
+#sideclick2 {
+    display: none;
+    z-index: 3;
+}
+
+.sidebar2 .inner-sidebar {
+    position: absolute;
+    display: none;
+    left: -100%;
+    background: #fff;
+    height: 100vh;
+    width: 12rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar3 .inner-sidebar {
+    position: absolute;
+    display: none;
+    right: -100%;
+    background: #fff;
+    height: 100vh;
+    width: 15rem;
+    transition: all 0.3s ease;
+}
+
+
+#sideclick:checked ~ .inner-sidebar {
+    left: 0%;
+    display: block;
+}
+
+#sideclick2:checked ~ .inner-sidebar {
+    right: 0%;
+    display: block;
+}
+
+.sidebar2 label,
+.sidebar3 label {
+    display: block;
+}
+
+.sidebar2 label .bx-chevrons-left,
+.sidebar3 label .bx-chevrons-right {
+    display: none;
+}
+
+#sideclick:checked ~ label .bx-chevrons-right,
+#sideclick2:checked ~ label .bx-chevrons-left {
+    display: none !important;
+}
+
+#sideclick:checked ~ label .bx-chevrons-left {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    left: 9.5rem;
+}
+
+#sideclick2:checked ~ label .bx-chevrons-right {
+    display: block !important;
+    z-index: 2;
+    right: 12.5rem;
+}
+
+.sidebar2 label .bx-chevrons-right,
+.sidebar3 label .bx-chevrons-right {
+    position: absolute;
+}
+
+.sidebar2,
+.sidebar3 {
+    background: #fff;
+}
+
+.main-section {
+    background-color: #dbdde0;
+}
+
+.mybtn {
+    border: none;
+    border-radius: 0rem;
+    background: none;
+    padding: .4rem .5rem;
+    color: #fff;
+}
+
+.tooltip-arrow {
+    display: none !important;
+}
+
+.tooltip-inner {
+    padding: .6rem 1rem;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.mybtn:hover {
+    background: #ffffff32;
+    color: #fff;
+}
+
+.mybtn i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar-collapse .nav-link:hover {
+    color: #fff;
+    background-color: #ffffff32;
+}
+
+.navbar-collapse input {
+    background-color: #ffffff35 !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.navbar-collapse input::placeholder {
+    color: #fff !important;
+}
+
+.navbar .input-group span {
+    background-color: #ffffff35 !important;
+    border: none !important;
+    color: #fff !important;
+}
+
+.dropdown-menu {
+    min-width: 12rem;
+    right: 0rem !important;
+}
+
+.dropdown-item {
+    padding: .5rem;
+}
+
+.dropstart:hover > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+
+.user {
+    width: 20rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff !important;
+}
+
+#exampleModalforlanguage .modal-body .bxs-crown {
+    font-size: 8rem;
+}
+
+#exampleModalforappearance .modal-body i {
+    font-size: 10rem;
+}
+
+#exampleModalforappearance .modal-body .d-flex div {
+    transition: .2s all ease-in-out;
+    border: 2px solid #fff;
+}
+
+#exampleModalforappearance .modal-body .d-flex div:hover,
+#exampleModalforPageSetting .modal-body .nav-link:hover,
+#exampleModalforSiteSetting .modal-body .nav-link:hover,
+#exampleModalforPublish .modal-body .nav-link:hover {
+    border: 2px solid #047dff;
+}
+
+
+#exampleModalforPageSetting .modal-body .nav-link,
+#exampleModalforSiteSetting .modal-body .nav-link,
+#exampleModalforPublish .modal-body .nav-link {
+    color: #000;
+    border: 2px solid #ffffff;
+}
+
+#exampleModalforPublish label,
+#exampleModalforPublish input,
+#exampleModalforPublish a,
+#exampleModalforPublish button {
+    font-size: .8rem;
+}
+
+#exampleModalforPublish .modal-body .nav-pills .nav-item .nav-link i {
+    font-size: 4rem;
+    margin: .5rem;
+}
+
+#exampleModalforPublish .modal-body .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #000 !important;
+    border: 2px solid #047dff;
+    background-color: transparent;
+}
+
+#exampleModalforPageSetting .modal-body .description,
+#exampleModalforSiteSetting .modal-body .description {
+    height: 100px;
+}
+
+#exampleModalforPageSetting .modal-body #v-pills-html .html-section-textarea,
+#exampleModalforSiteSetting .modal-body #sv-pills-html .html-section-textarea,
+#v-pills-css .html-section-textarea,
+#sv-pills-css .html-section-textarea {
+    height: 200px;
+}
+
+#exampleModalforPageSetting .social-share-img,
+#exampleModalforSiteSetting .social-share-img {
+    overflow: hidden;
+}
+
+#v-pills-Social-Share .card-body p,
+#sv-pills-Social-Share .card-body p {
+    font-size: .8rem;
+}
+
+#v-pills-Social-Share .card,
+#sv-pills-Social-Share .card {
+    width: 18rem;
+    height: 14rem;
+}
+
+#sv-pills-white-label input::placeholder {
+    color: #666;
+}
+/*---------------------------------------------------------------------------------------------
+                                      media Queries
+  -----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1024px) {
+
+    #exampleModalforPageSetting .modal-body .w-25,
+    #exampleModalforSiteSetting .modal-body .w-25 {
+        width: 30% !important;
+    }
+    .navbar{
+        z-index: 1 !important;
+    }
+
+}
+
+@media screen and (min-width:950px) {
+    .dropdown .dropdown-menu {
+        display: none;
+        right: 0rem;
+    }
+
+    .dropstart .dropdown-menu {
+        display: none;
+    }
+
+    .dropdown:hover > .dropdown-menu,
+    .dropstart:hover > .dropdown-menu {
+        display: block;
+        margin-top: .125em;
+        margin-left: .125em;
+    }
+
+    .dropstart:hover > .dropdown-menu {
+        position: absolute !important;
+        top: 0;
+        right: 100% !important;
+    }
+
+    .dropdown:focus > .dropdown-menu {
+        display: block !important;
+        margin-top: 0.125em;
+        margin-left: 0.125em;
+    }
+
+}
+
+@media screen and (max-width:950px) {
+    .dropdown-menu {
+        min-width: 20rem;
+    }
+
+    .Firsthover {
+        flex-wrap: wrap !important;
+    }
+
+    .starter {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        border: 0rem !important;
+    }
+
+    .input-group {
+        width: 90%;
+        margin: 0rem !important;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    #exampleModalforPageSetting .modal-body .w-25,
+    #exampleModalforSiteSetting .modal-body .w-25 {
+        width: 50% !important;
+    }
+
+    #exampleModalforPageSetting .modal-body .tab-content .col-8,
+    #exampleModalforSiteSetting .modal-body .tab-content .col-8 {
+        width: 100%;
+    }
+
+    #exampleModalforPageSetting .modal-body .tab-pane .mb-3,
+    #exampleModalforSiteSetting .modal-body .tab-pane .mb-3 {
+        margin-bottom: 0rem !important;
+
+    }
+
+    #exampleModalforPageSetting .modal-body .description,
+    #exampleModalforSiteSetting .modal-body .description {
+        height: 50px;
+    }
+
+    #exampleModalforPageSetting #v-pills-seo .modal-body .col-8 .card-body,
+    #exampleModalforSiteSetting #v-pills-seo .modal-body .col-8 .card-body {
+        padding: .5rem;
+    }
+
+    #exampleModalforPageSetting #v-pills-seo .modal-body .col-8 .card-body h4,
+    #exampleModalforSiteSetting #v-pills-seo .modal-body .col-8 .card-body h4 {
+        font-size: 1rem;
+    }
+
+    #exampleModalforPublish .modal-body .nav-pills .nav-item .nav-link i {
+        font-size: 2rem;
+        margin: .5rem;
+    }
+
+    #exampleModalforPublish .modal-body .px-5 {
+        padding-right: 0rem !important;
+        padding-left: 0rem !important;
+    }
+
+    #exampleModalforPublish .modal-body {
+        padding: .5rem;
+    }
    
-  }
+    .hover-on-page {
+        top: 6%;
+        left: 15rem;
+    }
+}
 
+@media screen and (max-width: 450px) {
+    #add-blocks-and-element:checked ~ label .bx-x,
+#add-pages:checked ~ label .bx-x,
+#add-blog-posts:checked ~ label .bx-x,
+#add-modal-popups:checked ~ label .bx-x ,
+#site-colors-and-fonts:checked ~ label .bx-x,
+#add-templates:checked ~ label .bx-x ,
+#add-Media:checked ~ label .bx-x,
+#settings:checked ~ label .bx-x ,
+#help:checked ~ label .bx-x {
+    left: 20rem;
+}
+    .sidebar .add-blocks .blocks-container {
+        width: 17rem;
+    }
+    #exampleModalforlanguage .modal-body .bxs-crown {
+        font-size: 4rem;
+    }
 
-  }
+    #exampleModalforlanguage .me-4 {
+        margin-right: .5rem !important;
+    }
+
+    #exampleModalforappearance .modal-body i {
+        font-size: 8rem;
+    }
+
+    #exampleModalforappearance .modal-body .d-flex .px-3 {
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
+
+    }
+
+    #exampleModalforappearance .modal-body .d-flex .py-2 {
+        padding: .3rem !important;
+    }
+
+    #exampleModalforPageSetting .modal-body .d-flex .pe-5,
+    #exampleModalforSiteSetting .modal-body .d-flex .pe-5 {
+        padding-right: .5rem !important;
+    }
+
+    #exampleModalforPageSetting .modal-body button,
+    #exampleModalforSiteSetting .modal-body button {
+        font-size: .8rem;
+        padding: .3rem .5rem !important;
+    }
+
+    #exampleModalforPageSetting input,
+    #exampleModalforPageSetting p,
+    #exampleModalforPageSetting label,
+    #exampleModalforPageSetting textarea,
+    #exampleModalforSiteSetting input,
+    #exampleModalforSiteSetting p,
+    #exampleModalforSiteSetting label,
+    #exampleModalforSiteSetting textarea,
+    #exampleModalforSiteSetting select {
+        font-size: .7rem !important;
+
+    }
+
+    #exampleModalforSiteSetting .modal-body {
+        padding: 0.5rem;
+    }
+
+    #v-pills-Social-Share .card,
+    #sv-pills-Social-Share .card {
+        width: 12rem;
+        height: 10rem;
+    }
+
+    #exampleModalforSiteSetting .modal-body .d-flex .pe-4 {
+        padding-right: 0.5rem !important;
+    }
+
+    #exampleModalforPublish .modal-body .gap-2 {
+        gap: 0.25rem !important;
+    }
+
+    #exampleModalforPublish .modal-body .nav-pills .nav-item .nav-link {
+        font-size: .7rem;
+        padding: .25rem;
+    }
+
+    #pills-HTML .d-flex button {
+        font-size: .8rem;
+    }
+
+    .sidebar2 .blocks-scroll-content {
+        height: 70vh;
+    }
+
+    .sidebar3 label,
+    .sidebar3 p,
+    .sidebar3 button,
+    .sidebar3 a {
+        font-size: .8rem !important;
+    }
+
+    .sidebar3 .p-2 {
+        padding: 0.3rem .5rem !important;
+    }
+    .hover-on-page {
+        left: 8rem;
+        width: 12rem;
+    }
+}
