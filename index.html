@@ -12,6 +12,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Newtask</title>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -43,16 +44,26 @@
                     </div>
                 </div>
                 <div class="d-flex m-auto ">
-                    <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Desktops"><i
-                            class='bx bx-desktop'></i></button>
-                    <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Laptops"><i
-                            class='bx bx-laptop'></i></button>
-                    <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tablets"><i
-                            class='bx bx-tab'></i></button>
-                    <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Landscape phones"><i class='bx bx-mobile-landscape'></i></button>
-                    <button class="btn mybtn" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Portait Phones"><i class='bx bx-mobile-alt'></i></button>
+                    <button class="btn mybtn" onclick="myDesktops()" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Desktops">
+                        <i class='bx bx-desktop'></i>
+                    </button>
+                    <button class="btn mybtn" onclick="myLaptops()" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Laptops">
+                        <i class='bx bx-laptop'></i>
+                    </button>
+                    <button class="btn mybtn" onclick="myTablets()" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Tablets">
+                        <i class='bx bx-tab'></i>
+                    </button>
+                    <button class="btn mybtn" onclick="myLandscapePhone()" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="Landscape phones">
+                        <i class='bx bx-mobile-landscape'></i>
+                    </button>
+                    <button class="btn mybtn" onclick="myPortraitPhones()" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="Portait Phones">
+                        <i class='bx bx-mobile-alt'></i>
+                    </button>
                     <button class="btn mybtn"> <i class='bx bx-dots-horizontal-rounded'></i></button>
                 </div>
                 <div class="d-flex align-items-center  me-0 ">
@@ -73,35 +84,35 @@
                             <i class='bx bx-file-find'></i>
                         </button>
                         <!--setting section-->
-                        <div class="dropdown">
-                            <button class="btn mybtn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        <div class="dropdown " id="setting-dropdown">
+                            <button class="btn mybtn " type="button" id="settingdropbtn" data-bs-toggle="dropdown"
                                 data-bs-auto-close="outside" aria-expanded="false">
                                 <i class='bx bx-cog'></i>
                             </button>
-                            <ul class="dropdown-menu p-0 " aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item " href="#" data-bs-toggle="modal"
+                            <ul class="dropdown-menu inside-drop p-0 " aria-labelledby="settingdropbtn">
+                                <li><a class="dropdown-item  small py-0" href="#" data-bs-toggle="modal"
                                         data-bs-target="#exampleModalforSiteSetting ">Site Setting...</a></li>
 
-                                <li><a class="dropdown-item " href="#" data-bs-toggle="modal"
+                                <li><a class="dropdown-item small py-1" href="#" data-bs-toggle="modal"
                                         data-bs-target="#exampleModalforPageSetting "> Page Setting..
                                     </a>
                                 </li>
 
                                 <li class="d-flex align-items-center justify-content-between">
-                                    <a class="dropdown-item " href="#" data-bs-toggle="modal"
+                                    <a class="dropdown-item samll py-1" href="#" data-bs-toggle="modal"
                                         data-bs-target="#exampleModalforlanguage">
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <p class="p-0 m-0">Site Language...</p>
+                                            <p class="p-0 m-0 small">Site Language...</p>
                                             <i class='bx bxs-crown pe-1' style="color: goldenrod;"></i>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item " href="#">
-                                        <h5 class="p-0 m-0 text-secondary">APPLICATION</h5>
+                                    <a class="dropdown-item py-1" href="#">
+                                        <p class="p-0 m-0 text-secondary">APPLICATION</p>
                                     </a>
                                 </li>
-                                <li><a class="dropdown-item " href="#" data-bs-toggle="modal"
+                                <li><a class="dropdown-item  small py-1 " href="#" data-bs-toggle="modal"
                                         data-bs-target="#exampleModalforappearance">
                                         <div class="d-flex align-items-center">
                                             <i class='bx bxs-moon fs-4 me-2'></i>
@@ -109,14 +120,15 @@
                                         </div>
                                     </a></li>
                                 <li class="dropstart">
-                                    <a class="dropdown-item  d-flex justify-content-between align-items-center" href="#"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="dropdown-item small py-1 d-flex justify-content-between align-items-center"
+                                        href="#" data-bs-toggle="dropdown" aria-expanded="false"
+                                        data-bs-auto-close="inside">
                                         <div class="d-flex align-items-center">
                                             <i class="fa fa-language fs-4 me-2"></i>
                                             <p class="p-0 m-0"> Language-EN </p>
                                         </div>
                                     </a>
-                                    <ul class="dropdown-menu inner-exapand p-0">
+                                    <ul class="dropdown-menu inner-expand p-0">
                                         <li><a class="dropdown-item" href="#">English</a></li>
                                         <li><a class="dropdown-item" href="#">Spanish</a></li>
                                         <li><a class="dropdown-item" href="#">Korean</a></li>
@@ -136,7 +148,7 @@
                         <button class="btn mybtn d-flex " data-bs-toggle="tooltip" data-bs-placement="bottom"
                             title="Premium"><i class='bx bxs-crown pe-1' style="color: goldenrod;"></i> Premium</button>
                         <!--user section-->
-                        <div class="dropdown ">
+                        <div class="dropstart " id="user-dropdown">
                             <button class="btn mybtn " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
                                 data-bs-auto-close="outside" aria-expanded="false">
                                 <i class='bx bx-user'></i>
@@ -146,28 +158,29 @@
                                         nishantrajputa11@gmail.com</a></li>
                                 <li class="d-flex align-items-center justify-content-between">
                                     <a class="dropdown-item p-1 align-items-center d-flex " href="#">
-                                        <i class='bx bxs-bar-chart-alt-2 fs-2 me-2'></i>Leads</a>
+                                        <i class='bx bxs-bar-chart-alt-2 fs-3 me-2'></i>Leads</a>
                                 </li>
 
                                 <li> <a class="dropdown-item p-1 align-items-center d-flex  my-md-1" href="#">
-                                        <i class='bx bx-check-circle fs-2 me-2'></i>Activate</a></li>
+                                        <i class='bx bx-check-circle fs-3 me-2'></i>Activate</a></li>
                                 <li class="d-flex align-items-center justify-content-between">
                                     <a class="dropdown-item p-1 align-items-center d-flex " href="#">
-                                        <i class='bx bx-star fs-2 me-2'></i>Licenses</a>
+                                        <i class='bx bx-star fs-3 me-2'></i>Licenses</a>
                                 </li>
                                 <li><a class="dropdown-item p-1 align-items-center d-flex" href="#">
-                                        <i class='bx bx-chat fs-2 me-2'></i>Support Issues</a></li>
+                                        <i class='bx bx-chat fs-3 me-2'></i>Support Issues</a></li>
                                 <li><a class="dropdown-item p-1 align-items-center d-flex " href="#"> <i
-                                            class='bx bx-cog fs-2 me-2'></i>Profile</a></li>
+                                            class='bx bx-cog fs-3 me-2'></i>Profile</a></li>
                                 <li class="dropstart">
                                     <a class="dropdown-item p-1 d-flex justify-content-between align-items-center"
-                                        href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                        href="#" data-bs-toggle="dropdown" aria-expanded="false"
+                                        data-bs-auto-close="inside">
                                         <p class="p-0 m-0 align-items-center d-flex"> <i
-                                                class='bx bx-download fs-2 me-2 '></i>Download </p>
-                                        <i class='bx bx-chevron-right fs-2'></i>
+                                                class='bx bx-download fs-3 me-2 '></i>Download </p>
+                                        <i class='bx bx-chevron-right fs-3'></i>
 
                                     </a>
-                                    <ul class="dropdown-menu download  inner-exapand p-0">
+                                    <ul class="dropdown-menu download  p-0">
                                         <li><a class="dropdown-item p-1 align-items-center d-flex" href="#">Desktop
                                                 Application</a></li>
                                         <li><a class="dropdown-item p-1 align-items-center d-flex" href="#">WordPress
@@ -177,7 +190,7 @@
                                     </ul>
                                 </li>
                                 <li><a class="dropdown-item p-1 align-items-center d-flex " href="#"><i
-                                            class='bx bx-exit fs-2 me-2'></i>SignOut</a> </li>
+                                            class='bx bx-exit fs-3 me-2'></i>SignOut</a> </li>
                             </ul>
                         </div>
                         <!--user section ended-->
@@ -1224,7 +1237,7 @@
                     <div class="add-blocks m-auto mb-2 mb-2 ">
                         <input type="checkbox" id="add-blocks-and-element">
                         <label for="add-blocks-and-element" class="">
-                            <i class='bx bxs-plus-circle fs-3' style='color:#006eff' data-bs-toggle="tooltip"
+                            <i class='bx bxs-plus-circle fs-4' style='color:#006eff' data-bs-toggle="tooltip"
                                 data-bs-placement="right" title="Add Blocks and Elements"></i>
                             <i
                                 class='bx bx-x border border-2 border-light  bx-tada-hover text-light rounded-pill bg-dark  fs-3'></i>
@@ -1240,7 +1253,8 @@
                                     <li class="list-group-item border-0   py-0">
                                         <div class="dropend position-relative" id="page">
                                             <button type="button" class="w-100 border-0 bg-transparent"
-                                                data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                                data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                                aria-expanded="false">
                                                 <div class=" d-flex justify-content-between align-items-center">
                                                     <div>
                                                         <i class='bx text-primary bx-file-blank fs-5 me-2'></i>Page
@@ -1253,16 +1267,16 @@
                                                 <div class="mb-2">
                                                     <a href="#"
                                                         class="btn dropdown-item text-dark text-decoration-none d-flex align-items-center"><i
-                                                            class='fs-1 bx bx-file-blank'></i>Blank</a>
-
+                                                            class='fs-1 bx bx-file-blank'></i>Blank
+                                                    </a>
                                                 </div>
                                                 <p class="m-0">POPULAR</p>
                                                 <div class="hover-on-page ">
                                                     <div class="list-group">
-                                                        <div class="dropend">
-
-                                                            <div class="dropdown position-relative">
-                                                            <a href="# " id="forhome" data-bs-auto-close="outside"  type="button" id="forhome" data-bs-toggle="dropdown" aria-expanded="false" 
+                                                        <div class="dropend position-relative">
+                                                            <a href="# " id="forhome" data-bs-auto-close="inside"
+                                                                type="button" id="forhome" data-bs-toggle="dropdown"
+                                                                aria-expanded="false"
                                                                 class="btn rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
                                                                 aria-current="true">
                                                                 <div
@@ -1271,26 +1285,31 @@
                                                                 </div>
                                                                 <i class='bx bxs-right-arrow '></i>
                                                             </a>
-                                                            <div class="dropdown-menu p-1 forhome-expand position-fixed" aria-labelledby="forhome">
+                                                            <div class="dropdown-menu p-1 forhome-expand position-fixed"
+                                                                aria-labelledby="forhome">
                                                                 <div class="home-elements overflow-scroll p-2  ">
                                                                     <div>
                                                                         <p>PAGES</p>
                                                                         <div
                                                                             class="page-elements position-relative d-flex flex-wrapm justify-content-center gap-2">
-                                                                            <div class="img-big" id="expand-img-1">
-                                                                                <img src="./imgs/img1.jpg">
-                                                                            </div>
-                                                                            <div class="expanded-img p-2 bg-light position-fixed " id="expanded-img">
-                                                                                <p class="m-0 text-center"><i class='bx bx-menu'></i></p>
-                                                                                <img src="./imgs/img1.jpg">
-                                                                            </div>
                                                                             <div>
+                                                                                <img src="./imgs/img1.jpg">
+                                                                            </div>
+
+                                                                            <div class="img-big" id="expand-img-1">
                                                                                 <img src="./imgs/img2.jpg">
                                                                             </div>
-                                                                           
+                                                                            <div class="expanded-img p-2 bg-light position-fixed "
+                                                                                id="expanded-img">
+                                                                                <p class="m-0 text-center"><i
+                                                                                        class='bx bx-menu'></i></p>
+                                                                                <img src="./imgs/img2.jpg">
+                                                                            </div>
+
                                                                         </div>
-                                                                        <p class="my-2"><a href="#" class="text-decoration-none">Show 4
-                                                                            more</a></p>
+                                                                        <p class="my-2"><a href="#"
+                                                                                class="text-decoration-none">Show 4
+                                                                                more</a></p>
                                                                     </div>
                                                                     <div>
                                                                         <p class="m-0">DESIGNS</p>
@@ -1303,72 +1322,66 @@
                                                                                 <img src="./imgs/img2.jpg">
                                                                             </div>
                                                                         </div>
-                                                                        <p class="my-2"><a href="#" class="text-decoration-none">Show 4
-                                                                            more</a></p>
+                                                                        <p class="my-2"><a href="#"
+                                                                                class="text-decoration-none">Show 4
+                                                                                more</a></p>
                                                                     </div>
-                                                                    
+
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                            <a href="#"
-                                                                class="rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
-                                                                aria-current="true">
-                                                                <div
-                                                                    class="home-inner-div d-flex gap-1 align-items-center">
-                                                                    <img src="./imgs/no.jpg">Landing
-                                                                </div>
-                                                                <i class='bx bxs-right-arrow '></i>
-                                                            </a>
-                                                            <a href="#"
-                                                                class="rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
-                                                                aria-current="true">
-                                                                <div
-                                                                    class="home-inner-div d-flex gap-1 align-items-center">
-                                                                    <img src="./imgs/no.jpg">Portfolio
-                                                                </div>
-                                                                <i class='bx bxs-right-arrow '></i>
-                                                            </a>
-                                                            <a href="#"
-                                                                class="rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
-                                                                aria-current="true">
-                                                                <div
-                                                                    class="home-inner-div d-flex gap-1 align-items-center">
-                                                                    <img src="./imgs/no.jpg">Team
-                                                                </div>
-                                                                <i class='bx bxs-right-arrow '></i>
-                                                            </a>
-                                                            <a href="#"
-                                                                class="rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
-                                                                aria-current="true">
-                                                                <div
-                                                                    class="home-inner-div d-flex gap-1 align-items-center">
-                                                                    <img src="./imgs/no.jpg">Gallery
-                                                                </div>
-                                                                <i class='bx bxs-right-arrow '></i>
-                                                            </a>
-                                                            <a href="#"
-                                                                class="rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
-                                                                aria-current="true">
-                                                                <div
-                                                                    class="home-inner-div d-flex gap-1 align-items-center">
-                                                                    <img src="./imgs/no.jpg">About
-                                                                </div>
-                                                                <i class='bx bxs-right-arrow '></i>
-                                                            </a>
-                                                            <a href="#"
-                                                                class="rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
-                                                                aria-current="true">
-                                                                <div
-                                                                    class="home-inner-div d-flex gap-1 align-items-center">
-                                                                    <img src="./imgs/no.jpg">Contact
-                                                                </div>
-                                                                <i class='bx bxs-right-arrow '></i>
-                                                            </a>
-                                                        </div>
+                                                        <a href="#"
+                                                            class="rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
+                                                            aria-current="true">
+                                                            <div class="home-inner-div d-flex gap-1 align-items-center">
+                                                                <img src="./imgs/no.jpg">Landing
+                                                            </div>
+                                                            <i class='bx bxs-right-arrow '></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
+                                                            aria-current="true">
+                                                            <div class="home-inner-div d-flex gap-1 align-items-center">
+                                                                <img src="./imgs/no.jpg">Portfolio
+                                                            </div>
+                                                            <i class='bx bxs-right-arrow '></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
+                                                            aria-current="true">
+                                                            <div class="home-inner-div d-flex gap-1 align-items-center">
+                                                                <img src="./imgs/no.jpg">Team
+                                                            </div>
+                                                            <i class='bx bxs-right-arrow '></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
+                                                            aria-current="true">
+                                                            <div class="home-inner-div d-flex gap-1 align-items-center">
+                                                                <img src="./imgs/no.jpg">Gallery
+                                                            </div>
+                                                            <i class='bx bxs-right-arrow '></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
+                                                            aria-current="true">
+                                                            <div class="home-inner-div d-flex gap-1 align-items-center">
+                                                                <img src="./imgs/no.jpg">About
+                                                            </div>
+                                                            <i class='bx bxs-right-arrow '></i>
+                                                        </a>
+                                                        <a href="#"
+                                                            class="rounded-0 p-1 d-flex justify-content-between align-items-center list-group-item list-group-item-action "
+                                                            aria-current="true">
+                                                            <div class="home-inner-div d-flex gap-1 align-items-center">
+                                                                <img src="./imgs/no.jpg">Contact
+                                                            </div>
+                                                            <i class='bx bxs-right-arrow '></i>
+                                                        </a>
+
 
                                                     </div>
                                                 </div>
-
                                             </div>
                                     </li>
                                     <li
@@ -1591,7 +1604,7 @@
                     <div class="add-blocks m-auto mb-2 ">
                         <input type="checkbox" id="add-pages">
                         <label for="add-pages" class="">
-                            <i class='bx bxs-file-blank fs-3 text-light' data-bs-toggle="tooltip"
+                            <i class='bx bxs-file-blank fs-4 text-light' data-bs-toggle="tooltip"
                                 data-bs-placement="right" title="Pages"></i>
                             <i
                                 class='bx bx-x border border-2 border-light  bx-tada-hover text-light rounded-pill bg-dark  fs-3'></i>
@@ -1638,7 +1651,7 @@
                     <div class="add-blocks m-auto mb-2 ">
                         <input type="checkbox" id="add-blog-posts">
                         <label for="add-blog-posts" class="">
-                            <i class='bx  bxs-message-detail fs-3 text-light' data-bs-toggle="tooltip"
+                            <i class='bx  bxs-message-detail fs-4 text-light' data-bs-toggle="tooltip"
                                 data-bs-placement="right" title="Blog Posts"></i>
                             <i
                                 class='bx bx-x border border-2 border-light  bx-tada-hover text-light rounded-pill bg-dark  fs-3'></i>
@@ -1679,7 +1692,7 @@
                     <div class="add-blocks m-auto mb-2 ">
                         <input type="checkbox" id="add-modal-popups">
                         <label for="add-modal-popups" class="">
-                            <i class='bx   bx-detail fs-3 text-light' data-bs-toggle="tooltip" data-bs-placement="right"
+                            <i class='bx   bx-detail fs-4 text-light' data-bs-toggle="tooltip" data-bs-placement="right"
                                 title="Modal Popups"></i>
                             <i
                                 class='bx bx-x border border-2 border-light  bx-tada-hover text-light rounded-pill bg-dark  fs-3'></i>
@@ -1716,7 +1729,7 @@
                     <div class="add-blocks m-auto mb-2 ">
                         <input type="checkbox" id="site-colors-and-fonts">
                         <label for="site-colors-and-fonts" class="">
-                            <i class='bx  bxs-palette  fs-3 text-light' data-bs-toggle="tooltip"
+                            <i class='bx  bxs-palette  fs-4 text-light' data-bs-toggle="tooltip"
                                 data-bs-placement="right" title="Site Colors & Fonts"></i>
                             <i
                                 class='bx bx-x border border-2 border-light  bx-tada-hover text-light rounded-pill bg-dark  fs-3'></i>
@@ -1774,7 +1787,7 @@
                     <div class="add-blocks m-auto mb-2 ">
                         <input type="checkbox" id="add-templates">
                         <label for="add-templates" class="">
-                            <i class='bx  bxs-layout  fs-3 text-light' data-bs-toggle="tooltip"
+                            <i class='bx  bxs-layout  fs-4 text-light' data-bs-toggle="tooltip"
                                 data-bs-placement="right" title="Templates"></i>
                             <i
                                 class='bx bx-x border border-2 border-light  bx-tada-hover text-light rounded-pill bg-dark  fs-3'></i>
@@ -1826,7 +1839,7 @@
                     <div class="add-blocks m-auto mb-2 ">
                         <input type="checkbox" id="add-Media">
                         <label for="add-Media" class="">
-                            <i class='bx bxs-image fs-3 text-light' data-bs-toggle="tooltip" data-bs-placement="right"
+                            <i class='bx bxs-image fs-4 text-light' data-bs-toggle="tooltip" data-bs-placement="right"
                                 title="Media"></i>
                             <i
                                 class='bx bx-x border border-2 border-light  bx-tada-hover text-light rounded-pill bg-dark  fs-3'></i>
@@ -1861,7 +1874,7 @@
                     <div class="add-blocks m-auto mb-2 ">
                         <input type="checkbox" id="settings">
                         <label for="settings" class="">
-                            <i class='bx bxs-cog fs-3 text-light' data-bs-toggle="tooltip" data-bs-placement="right"
+                            <i class='bx bxs-cog fs-4 text-light' data-bs-toggle="tooltip" data-bs-placement="right"
                                 title="Page & Site Setting"></i>
                             <i
                                 class='bx bx-x border border-2 border-light  bx-tada-hover text-light rounded-pill bg-dark  fs-3'></i>
@@ -1964,7 +1977,7 @@
                     <div class="add-blocks m-auto mb-2 ">
                         <input type="checkbox" id="help">
                         <label for="help" class="">
-                            <i class='bx bxs-help-circle fs-3 text-light' data-bs-toggle="tooltip"
+                            <i class='bx bxs-help-circle fs-4 text-light' data-bs-toggle="tooltip"
                                 data-bs-placement="right" title="Help"></i>
                             <i
                                 class='bx bx-x border border-2 border-light  bx-tada-hover text-light rounded-pill bg-dark  fs-3'></i>
@@ -2054,8 +2067,8 @@
             <div class="sidebar2 position-relative ">
                 <input type="checkbox" id="sideclick">
                 <label for="sideclick">
-                    <i class='bx bx-chevrons-right  fs-2 p-1'></i>
-                    <i class='bx bx-chevrons-left  fs-2 p-1'></i>
+                    <i class='bx bx-chevrons-right  fs-4 p-1'></i>
+                    <i class='bx bx-chevrons-left  fs-4 p-1'></i>
                 </label>
                 <div class="inner-sidebar position-relative px-2 ">
                     <h5 class="position-relative inner-siderbar-heading pt-2  fw-light">Page 2</h5>
@@ -2143,8 +2156,8 @@
         <div class="sidebar3  position-relative  ">
             <input type="checkbox" id="sideclick2">
             <label for="sideclick2">
-                <i class='bx bx-chevrons-left  fs-2 p-1'></i>
-                <i class='bx bx-chevrons-right  fs-2 p-1'></i>
+                <i class='bx bx-chevrons-left  fs-4 p-1'></i>
+                <i class='bx bx-chevrons-right  fs-4 p-1'></i>
 
             </label>
             <div class="inner-sidebar overflow-scroll">
@@ -2241,8 +2254,8 @@
         ---------------------------------------------------------------------------------------------------->
 
     </div>
-    <div class="overflow-hidden  main-section    mt-5" style="height: 70rem;">
-        <div class="m-auto w-50 bg-light">
+    <div class="overflow-hidden main-section m-auto  mt-5" id="main-section">
+        <div class="m-auto bg-light ">
             <h1>skddkdf</h1>
 
         </div>
@@ -2261,6 +2274,25 @@
         })
 
     </script>
+    <script>
+        function myDesktops() {
+            document.getElementById("main-section").style.maxWidth = "1300px";
+        }
+        function myLaptops() {
+            document.getElementById("main-section").style.maxWidth = "1100px";
+        }
+        function myTablets() {
+            document.getElementById("main-section").style.maxWidth = "750px";
+        }
+        function myLandscapePhone() {
+            document.getElementById("main-section").style.maxWidth = "600px";
+        }
+        function myPortraitPhones() {
+            document.getElementById("main-section").style.maxWidth = "450px";
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+        integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
 </body>
 
 </html>

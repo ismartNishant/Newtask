@@ -11,6 +11,9 @@
 
 }
 
+body{
+    background-color: #bfbfbf;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -100,7 +103,7 @@
 .sidebar,
 .sidebar2,
 .sidebar3 {
-    width: 2.5rem;
+    width: 2rem;
     height: 100vh;
 }
 
@@ -243,50 +246,80 @@
 }
 .dropend .forhome-expand{
     height: 100vh;
-    left: 18rem;
+    left: 17rem;
     top: 0rem !important;
     width: 22rem;
     background-color: #ffffff;
 }
 
+
+#setting-dropdown .dropdown-menu {
+    min-width: 12rem;
+
+}
+
+#user-dropdown .user {
+    top: 3rem;
+    right: 0rem;
+}
+
+.dropdown .dropdown-item {
+    padding: .5rem;
+}
+
+.inner-expand {
+    background-color: #ebe8e8;
+}
+
+.user {
+    width: 20rem;
+}
 .blocks-container .dropend button:hover {
     background-color: #02c0ff !important;
+}
+.hover-on-page .dropend .dropdown-menu{
+    display: none;
 }
 
 .hover-on-page .home-inner-div div {
     width: 6rem;
 
 }
-.expanded-img img{
+
+.expanded-img img {
     object-fit: fill;
     height: 100% !important;
 }
+
 .hover-on-page .home-inner-div img {
     width: 100%;
     height: 2.5rem;
     object-fit: cover;
 }
 
-.page-elements div{
+.page-elements div {
     width: 10rem;
     height: 15rem;
 }
-.page-elements div img{
+
+.page-elements div img {
     width: 100%;
     object-fit: cover;
     height: 15rem;
 }
 
-.expanded-img{
+.expanded-img {
     display: none;
     width: 20rem !important;
-    height: 95vh !important;
-    left: 40rem;
+    height: 100vh !important;
+    left: 38rem;
     top: 0%;
 }
+
 #expand-img-1:hover + .expanded-img {
     display: block;
 }
+
 .hover-on-page .list-group .list-group-item-action {
     border: 2px solid #fff !important;
 }
@@ -297,7 +330,9 @@
 }
 
 .main-section {
-    background-color: #dbdde0;
+    background-color: #305690;
+    height: 100vh;
+
 }
 
 .mybtn {
@@ -350,28 +385,6 @@
     color: #fff !important;
 }
 
-.dropdown .dropdown-menu {
-    min-width: 12rem;
-    right: 0rem !important;
-}
-
-.dropdown .dropdown-item {
-    padding: .5rem;
-}
-
-.inner-exapand {
-    background-color: #ebe8e8;
-}
-
-.dropstart:hover > .dropdown-menu {
-    position: absolute;
-    top: 0;
-    right: 100%;
-}
-
-.user {
-    width: 20rem;
-}
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -466,9 +479,11 @@
     #exampleModalforSiteSetting .modal-body .w-25 {
         width: 30% !important;
     }
+
     .dropend .forhome-expand {
         left: 10rem;
     }
+
     .expanded-img {
         left: 11rem;
 
@@ -476,32 +491,35 @@
 }
 
 @media screen and (min-width:300px) {
-    .dropdown .dropdown-menu {
+    .hover-on-page .dropend .dropdown-menu {
         display: none !important;
         right: 0rem;
     }
-
-    .dropstart .dropdown-menu {
-        display: none !important;
-    }
-
-    .dropdown:hover > .dropdown-menu,
-    .dropstart:hover > .dropdown-menu {
+    .hover-on-page .dropend:hover > .dropdown-menu {
         display: block !important;
         margin-top: .125em;
         margin-left: .125em;
     }
 
-    .dropstart:hover > .dropdown-menu {
-        position: absolute !important;
-        top: 0;
-        right: 100% !important;
+
+}
+
+@media screen and (min-width:1040px) {
+
+    #setting-dropdown:hover .inside-drop,
+    #user-dropdown:hover .user {
+        display: block;
+        margin-top: 0;
     }
 
-    .dropdown:focus > .dropdown-menu {
-        display: block !important;
-        margin-top: 0.125em;
-        margin-left: 0.125em;
+    #setting-dropdown .dropstart:hover .inner-expand,
+    #user-dropdown .dropstart:hover .download {
+        display: block;
+        top: 0;
+        right: 100%;
+        left: auto;
+        margin-top: 0;
+        margin-right: 0.125rem;
     }
 
 }
@@ -527,9 +545,23 @@
         width: 90%;
         margin: 0rem !important;
     }
-    .dropend .forhome-expand ,
-    .expanded-img{
+
+    .dropend .forhome-expand,
+    .expanded-img {
         left: 4rem;
+    }
+
+    #setting-dropdown .dropstart:hover .inner-expand {
+        left: 0;
+        position: absolute;
+        top: -22.5rem;
+    }
+
+    #user-dropdown .dropstart:hover .download {
+        left: 0 !important;
+        position: absolute !important;
+        right: 0 !important;
+        top: -6rem !important;
     }
 }
 
@@ -586,10 +618,6 @@
 
     }
 
-    .dropstart .download {
-        top: -4.8rem !important;
-    }
-
     .dropend .page-expand {
         left: -6.5rem !important;
         width: 14rem;
@@ -602,8 +630,14 @@
     .nav-item .dropdown .dropdown-menu h5 {
         font-size: .8rem;
     }
-    .dropend .forhome-expand, .expanded-img {
+
+    .dropend .forhome-expand,
+    .expanded-img {
         left: -8rem;
+    }
+
+    #setting-dropdown .dropstart:hover .inner-expand {
+        position: absolute;
     }
 }
 
@@ -720,5 +754,3 @@
         width: 14rem;
     }
 }
-
-
