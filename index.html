@@ -2070,7 +2070,7 @@
                     <i class='bx bx-chevrons-right  fs-4 p-1'></i>
                     <i class='bx bx-chevrons-left  fs-4 p-1'></i>
                 </label>
-                <div class="inner-sidebar position-relative px-2 ">
+                <div class="inner-sidebar position-relative px-1 ">
                     <h5 class="position-relative inner-siderbar-heading pt-2  fw-light">Page 2</h5>
                     <div class="">
                         <nav>
@@ -2160,93 +2160,255 @@
                 <i class='bx bx-chevrons-right  fs-4 p-1'></i>
 
             </label>
-            <div class="inner-sidebar overflow-scroll">
-                <p class="position-relative inner-siderbar-heading mt-1 fw-bold text-center m-0">Page</p>
-                <div class="pb-2 pt-1 px-2 border-bottom border-1 border-secondary">
-                    <div class="">
-                        <label class="small">Name</label>
-                        <div class="">
-                            <input type="text" class="form-control small" value="Page 2">
+            <div class="inner-sidebar">
+                <ul class="nav my-2 justify-content-center ms-4 " id="pills-tab" role="tablist">
+                    <li class="nav-item me-3" role="presentation">
+                        <button class="rounded-0 btn btn-outline-dark active  py-1" id="pills-Colors-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-Colors" type="button" role="tab"
+                            aria-controls="pills-Colors" aria-selected="true">Colors</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="rounded-0 btn btn-outline-dark py-1" id="pills-Theme-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Theme" type="button" role="tab" aria-controls="pills-Theme"
+                            aria-selected="false">Theme</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active p-2" id="pills-Colors" role="tabpanel"
+                        aria-labelledby="pills-Colors-tab">
+                        <div class=" m-auto">
+                            <div class="dropdown ">
+                                <button
+                                    class="rounded-0 m-auto btn btn-outline-dark d-flex justify-content-between align-items-center gap-5"
+                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <div class="d-flex align-items-center">
+                                        <i class='bx bxl-microsoft fs-4 text-danger'></i>
+                                        Presets
+                                    </div>
+                                    <i class='bx bxs-chevron-down fs-3'></i>
+                                </button>
+                                <ul class="dropdown-menu theme-palet" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item d-flex justify-content-center" href="#">
+                                            <div class="p-3" style="background-color: #E86A33;"></div>
+                                            <div class="p-3" style="background-color: #263A29;"></div>
+                                            <div class="p-3" style="background-color: #41644A;"></div>
+                                            <div class="p-3" style="background-color: #350303;"></div>
+                                            <div class="p-3" style="background-color: #FFF9DE;"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex justify-content-center" href="#">
+                                            <div class="p-3" style="background-color: #A6D0DD;"></div>
+                                            <div class="p-3" style="background-color: #FF6969;"></div>
+                                            <div class="p-3" style="background-color: #FFD3B0;"></div>
+                                            <div class="p-3" style="background-color: #FFF9DE;"></div>
+                                            <div class="p-3" style="background-color: #0d56dc;"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex justify-content-center" href="#">
+                                            <div class="p-3" style="background-color: #0A4D68;"></div>
+                                            <div class="p-3" style="background-color: #088395;"></div>
+                                            <div class="p-3" style="background-color: #05BFDB;"></div>
+                                            <div class="p-3" style="background-color: #00FFCA;"></div>
+                                            <div class="p-3" style="background-color: #7becee;"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex justify-content-center" href="#">
+                                            <div class="p-3" style="background-color: #2B3467;"></div>
+                                            <div class="p-3" style="background-color: #BAD7E9;"></div>
+                                            <div class="p-3" style="background-color: #FCFFE7;"></div>
+                                            <div class="p-3" style="background-color: #EB455F;"></div>
+                                            <div class="p-3" style="background-color: #d37474;"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex justify-content-center" href="#">
+                                            <div class="p-3" style="background-color: #786fd7;"></div>
+                                            <div class="p-3" style="background-color: #8056d8;"></div>
+                                            <div class="p-3" style="background-color: #9f89c6;"></div>
+                                            <div class="p-3" style="background-color: #BFACE2;"></div>
+                                            <div class="p-3" style="background-color: #EBC7E6;"></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex justify-content-center" href="#">
+                                            <div class="p-3" style="background-color: #2D033B;"></div>
+                                            <div class="p-3" style="background-color: #810CA8;"></div>
+                                            <div class="p-3" style="background-color: #9f3ec0;"></div>
+                                            <div class="p-3" style="background-color: #E5B8F4;"></div>
+                                            <div class="p-3" style="background-color: #ebcff5;"></div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <p class="m-0">Theme Colors</p>
+                            <p class="small text-secondary m-0">setting for all pages</p>
+                            <div class="text-center my-1">
+                                <button class="btn btn-primary text-light  px-1 py-1 pb-0 rounded-0"><i
+                                        class='bx bxs-pencil fs-4'></i></button>
+                                <button class="btn btn-danger text-light  px-1 py-1 pb-0 rounded-0"><i
+                                        class='bx bxs-pencil fs-4'></i></button>
+                                <button class="btn btn-warning text-light  px-1 py-1 pb-0 rounded-0"><i
+                                        class='bx bxs-pencil fs-4'></i></button>
+                                <button class="btn btn-success text-light  px-1 py-1 pb-0 rounded-0"><i
+                                        class='bx bxs-pencil fs-4'></i></button>
+                                <button class="btn btn-secondary text-light  px-1 py-1 pb-0 rounded-0"><i
+                                        class='bx bxs-pencil fs-4'></i></button>
+
+
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <p>Automatic</p>
+                            <div class="d-flex justify-content-center">
+                                <div class="d-flex flex-column">
+                                    <i class='bx bxs-square fs-1' style="color: #E3F6FF;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #5BC0F8;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #5ba7f8;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #576CBC;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #083471;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #000000;"></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <i class='bx bxs-square fs-1' style="color: #fae7ea;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #cd9393;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #ad5c5c;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #a21818;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #4f0303;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #100101;"></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <i class='bx bxs-square fs-1' style="color: #fafbe4;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #c8cd93;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #b6bf57;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #abb110;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #4f5105;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #101001;"></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <i class='bx bxs-square fs-1' style="color: #d2eff0;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #93cdcd;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #50c5bd;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #158e93;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #08585c;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #010e10;"></i>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <i class='bx bxs-square fs-1' style="color: #dbdcdc;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #aaaaaa;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #737575;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #585b5b;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #2d2e2e;"></i>
+                                    <i class='bx bxs-square fs-1' style="color: #000000;"></i>
+                                </div>
+                            </div>
+                            <div class="my-3">
+                                <p class="m-0 mb-2">Additional Colors</p>
+                                <button class="btn rounded-0 btn-outline-dark d-flex align-items-center"> <i
+                                        class='bx bx-plus fs-4'></i>New Color</button>
+                            </div>
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <p class="m-0 small">Text DARK</p>
+                                    <div class="bg-dark px-4 py-2 pb-3 border border-dark"></div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="m-0 small">Text LIGHT</p>
+                                    <div class="bg-light px-4 py-2 pb-3 border border-dark"></div>
+                                </div>
+                                <div class="mt-3">
+                                    <a class="text-decoration-none " href="#">Background for all Pages</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="p-2  border-bottom border-1 border-secondary">
-                    <div class=" px-3">
-                        <p class="mb-2 small">SEO and Head</p>
-                        <a class="btn btn-outline-dark py-1  d-flex justify-content-center  align-items-center" href="#"
-                            data-bs-toggle="modal" data-bs-target="#exampleModalforPageSetting ">
-                            <i class='bx bx-cog fs-5 me-2'></i> Page Setting..
-                        </a>
-                    </div>
-                </div>
-                <div class="p-2 px-3  border-bottom border-1 border-secondary">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                        <label class="form-check-label small" for="flexCheckDefault">
-                            Show Header
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label small" for="flexCheckChecked">
-                            Show Footer
-                        </label>
-                    </div>
-                </div>
-                <div class="p-2  border-bottom border-1 border-secondary">
-                    <div class="px-3">
-                        <p class="m-0 small">Page Background</p>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" checked>
-                            <label class="form-check-label small d-flex justify-content-between">
-                                From Theme
-                                <a href="#" class="text-decoration-none small">Edit</a>
-                            </label>
+                    <div class="tab-pane fade " id="pills-Theme" role="tabpanel" aria-labelledby="pills-Theme-tab">
+                        <div class=" px-2 border-bottom border-secondary pb-3">
+                            <p class="m-0 small">SEO and Head</p>
+                            <button class="m-auto btn rounded-0 btn-outline-dark d-flex align-items-center p-1 px-3"
+                                data-bs-toggle="modal" data-bs-target="#exampleModalforSiteSetting "><i
+                                    class='bx bx-cog fs-4 me-2'></i>Site Setting</button>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio">
-                            <label class="form-check-label small">
-                                Custom
-                            </label>
+                        <div class="p-3 border-bottom border-secondary">
+                            <p class="mb-1 small">Background for all Pages</p>
+                            <div>
+                                <i class='bx bxs-square fs-1' style="color: #2e2e2e;"></i>
+                                <i class='bx bxs-square fs-1' style="color: #dbdcdc;"></i>
+                                <i class='bx bx-image-alt fs-1 text-secondary'></i>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="m-0">Color</p>
+                                <div class="bg-light px-4 py-2 pb-3 border border-dark"></div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <p class="m-0 d-flex align-items-center small"> <i class='bx bxs-crown pe-1 fs-4'
+                                    style="color: goldenrod;"></i>Content Area Width</p>
+                            <a class="text-decoration-none small">Get License</a>
+                            <div class="mt-3">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="d-flex align-items-center ">
+                                        <i class='bx bx-desktop fs-2 me-2 '></i>
+                                        <p class="m-0">Desktops</p>
+                                    </div>
+                                    <div class="border  px-2" style="color: #737575;">
+                                        1140
+                                    </div>
+
+                                </div>
+                                <div class=" d-flex justify-content-between align-items-center mb-3">
+                                    <div class="d-flex align-items-center ">
+                                        <i class='bx bx-laptop fs-2 me-2 '></i>
+                                        <p class="m-0">Laptops</p>
+                                    </div>
+                                    <div class="border  px-2" style="color: #737575;">
+                                        940
+                                    </div>
+
+                                </div>
+                                <div class=" d-flex justify-content-between align-items-center mb-3">
+                                    <div class="d-flex align-items-center ">
+                                        <i class='bx bx-tab fs-2 me-2 '></i>
+                                        <p class="m-0">Tablets</p>
+                                    </div>
+                                    <div class="border  px-2" style="color: #737575;">
+                                        720
+                                    </div>
+
+                                </div>
+                                <div class=" d-flex justify-content-between align-items-center mb-3">
+                                    <div class="d-flex align-items-center ">
+                                        <i class='bx bx-mobile-landscape fs-2 me-2 '></i>
+                                        <p class="m-0">Landscape Phones</p>
+                                    </div>
+                                    <div class="border  px-2" style="color: #737575;">
+                                        540
+                                    </div>
+
+                                </div>
+                                <div class=" d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center ">
+                                        <i class='bx bx-mobile-alt fs-2 me-2 '></i>
+                                        <p class="m-0">Portait Phones</p>
+                                    </div>
+                                    <div class="border  px-2" style="color: #737575;">
+                                        340
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="p-2  px-3 border-bottom border-1 border-secondary">
-                    <div class="form-check align-items-center">
-                        <input class="form-check-input" type="checkbox">
-                        <label class="form-check-label d-flex small justify-content-between">
-                            Back To Top
-                            <a href="#" class="text-decoration-none small">Edit</a>
-                        </label>
-                    </div>
-                </div>
-                <div class="p-3 px-2 border-bottom border-1 border-secondary">
-                    <div class="">
-                        <button
-                            class="btn py-1  btn-outline-dark d-flex justify-content-center align-items-center m-auto">
-                            <i class='bx bx-desktop fs-5 me-2'></i>
-                            Content width
-                            <i class='ms-4 bx bxs-chevron-right fs-4'></i>
-                        </button>
-                    </div>
-                </div>
-                <div class=" p-2 border-bottom border-1 border-secondary">
-                    <div class="">
-                        <label class="small">Password</label>
-                        <div class="">
-                            <input type="password" class="form-control">
-                        </div>
-                    </div>
-                    <div>
-                        <p class="m-0 small">Allows only user with a password to visit this page</p>
-                        <div class="alert alert-warning p-1 mt-1 m-0" role="alert">
-                            <p class="m-0  small">Try in Browser preview only. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-2 border-bottom border-1 border-secondary text-center">
-                    <button class="btn btn-outline-dark py-1 px-4">Delete Page</button>
-                </div>
+
             </div>
         </div>
         <!---------------------------------------------------------------------------------------------------
@@ -2254,9 +2416,226 @@
         ---------------------------------------------------------------------------------------------------->
 
     </div>
-    <div class="overflow-hidden main-section m-auto  mt-5" id="main-section">
-        <div class="m-auto bg-light ">
-            <h1>skddkdf</h1>
+    <div class=" main-section m-auto  mt-5" id="main-section">
+        <div class="m-auto p-2  ">
+            <div class="d-flex justify-content-between align-items-baseline">
+                <a role="button" class="btn btn-outline-primary p-0 px-2 d-flex align-items-center" href="#"><i
+                        class='bx bxs-chevron-left fs-3'></i>Back</a>
+                <div class="text-center ">
+                    <h3 class="m-0">Theme Setting</h3>
+                    <p class="small"> Setting for all pages. Select an item to change its properties</p>
+                </div>
+                <i class='bx bx-x fs-3 rounded-circle p-1 border  border-dark'></i>
+
+            </div>
+            <div>
+                <p class="fw-bold m-0">Header</p>
+                <nav class="bg-light">
+                    <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap p-3">
+                        <a class="navbar-brand text-dark" href="#">Logo</a>
+                        <div>
+                            <ul class="list-unstyled d-flex align-items-center m-0 t flex-wrap">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-dark p-2" aria-current="page" href="#">Page 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark p-2" href="#">Page 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark p-2" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark p-2" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark p-2" href="#">Conatct</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="d-flex justify-content-between gap-3 my-4">
+                <div class="col-3  ">
+                    <p class="fw-bold m-0">Colors</p>
+                    <div class="border m-auto colors-div d-flex   bg-light p-3">
+                        <div class="bg-dark"></div>
+                        <div class="bg-danger"></div>
+                        <div class="bg-success"></div>
+                        <div class="bg-info"></div>
+                        <div class="bg-warning"></div>
+                        <div class="bg-secondary"></div>
+                        <div class="bg-light border"></div>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <p class="fw-bold m-0">Headings</p>
+                    <div class="border m-auto  bg-light p-3 colors-div">
+                        <h5 class="m-0">Roboto</h5>
+                        <p class="small m-0">White: Regular</p>
+                    </div>
+                </div>
+                <div class="col-3 ">
+                    <p class="fw-bold m-0">Text</p>
+                    <div class="colors-div bg-light p-3">
+                        <p class="small m-0">Opan Sans</p>
+                        <p class="small m-0">Size : 16px</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-4">
+                <p class="m-0 fw-bold">Headings And Text</p>
+                <div class="bg-light p-4">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div>
+                            <h1>Heading 1</h1>
+                            <h2>Heading 2</h2>
+                            <h3>Heading 3</h3>
+                            <h4>Heading 4</h4>
+                            <h5>Heading 5</h5>
+                            <h6>Heading 6</h6>
+                        </div>
+                        <div class="custom-headings">
+                            <h1>Intro Title</h1>
+                            <h2 class="fw-light">Intro Subtitle</h2>
+                            <h3 class="fw-lighter">Lead Text</h3>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit rem pariatur
+                            consequuntur
+                            quaerat sint in est debitis, minima tempore, enim voluptatibus suscipit consectetur sed
+                            corrupti.
+                            Ab adipisci placeat rem?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit rem pariatur
+                            consequuntur
+                            quaerat sint in </p>
+
+                        <p class="small my-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit
+                            rem pariatur consequuntur </p>
+                        <a href="#" class="text-decoration-none">Hyperlink </a>
+                        <div class="border-start border-primary border-5 my-4 p-2 ">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit rem pariatur
+                                consequuntur
+                                quaerat sint in est debitis, minima tempore, enim voluptatibus suscipit consectetur sed
+                                corrupti.
+                                Ab adipisci placeat rem?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugit rem pariatur
+                                consequuntur
+                                quaerat sint in</p>
+
+                        </div>
+                        <button class="btn btn-primary rounded-0">Button </button>
+                        <div class="my-4">
+                            <ul>
+                                <li>List item</li>
+                                <li>List item</li>
+                            </ul>
+                        </div>
+                        <div class="my-4">
+                            <ol>
+                                <li>List item</li>
+                                <li>List item</li>
+                            </ol>
+                        </div>
+
+
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <p class="m-0">Checks</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                <label class="form-check-label" for="flexCheckDefault1">
+                                    Default
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked>
+                                <label class="form-check-label" for="flexCheckChecked2">
+                                    Checked
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                <label class="form-check-label" for="flexCheckDefault3">
+                                    Default
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" checked>
+                                <label class="form-check-label" for="flexCheckChecked4">
+                                    Checked
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="col-3">
+                            <p class="m-0">Radio</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Default
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Default
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    Default
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault4" checked>
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                    Default
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="my-4">
+                <p class="fw-bold m-0">Footer</p>
+                <div class="bg-dark text-center m-auto p-4">
+                    <p class="text-light">Lorem ipsum dolor sit amet consecuibusdam inventore dicta! Quae tenetur sint
+                        neque mollitia ull!</p>
+                </div>
+
+            </div>
+            <div class="my-4">
+                <p class="fw-bold m-0">Cookie Consent Popup</p>
+                <div class="bg-dark  p-4 d-flex justify-content-between align-items-center">
+                    <div>
+                        <h2 class="text-light">Cookie Policy</h2>
+                        <p class="text-light">Lorem ipsum dolor sit amet consecuibusdam inventore dicta!</p>
+                    </div>
+                    <diV>
+                        <button class="btn btn-primary rounded-0">Confirm</button>
+                    </diV>
+
+                </div>
+
+            </div>
 
         </div>
     </div>
@@ -2276,10 +2655,10 @@
     </script>
     <script>
         function myDesktops() {
-            document.getElementById("main-section").style.maxWidth = "1300px";
+            document.getElementById("main-section").style.maxWidth = "1000px";
         }
         function myLaptops() {
-            document.getElementById("main-section").style.maxWidth = "1100px";
+            document.getElementById("main-section").style.maxWidth = "950px";
         }
         function myTablets() {
             document.getElementById("main-section").style.maxWidth = "750px";

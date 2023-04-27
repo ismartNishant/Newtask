@@ -184,7 +184,7 @@ body{
     right: -100%;
     background: #fff;
     height: 100vh;
-    width: 15rem;
+    width: 14rem;
     transition: all 0.3s ease;
 }
 
@@ -224,7 +224,7 @@ body{
 #sideclick2:checked ~ label .bx-chevrons-right {
     display: block !important;
     z-index: 2;
-    right: 12.5rem;
+    right: 12rem;
 }
 
 .sidebar2 label .bx-chevrons-right,
@@ -330,11 +330,35 @@ body{
 }
 
 .main-section {
-    background-color: #305690;
-    height: 100vh;
+    background-color: #dedede;
+    position: relative;
+    z-index: -9;
+    max-width: 1050px;
 
 }
-
+.main-section h3:hover{
+    color: red;
+}
+.colors-div div{
+    width: 2rem;
+    height: 2rem;
+}
+.flex-column .bxs-square{
+    line-height: .7;
+}
+.theme-palet .dropdown-item div{
+    width: 1rem;
+    height: 1rem;
+}
+.d-flex .col-3 .colors-div{
+    height: 5rem !important;
+}
+.custom-headings h1{
+    font-size: 5rem;
+}
+.custom-headings h2{
+    font-size: 3rem;
+}
 .mybtn {
     border: none;
     border-radius: 0rem;
@@ -525,7 +549,7 @@ body{
 }
 
 @media screen and (max-width:950px) {
-    .dropdown .dropdown-menu {
+    #user-dropdown .dropdown-menu {
         min-width: 20rem;
     }
 
@@ -746,6 +770,14 @@ body{
     .sidebar3 .p-2 {
         padding: 0.3rem .5rem !important;
     }
+    .main-section nav .nav-item .nav-link{
+            padding: 0.3rem!important;
+    }
+    .main-section .colors-div,
+    .main-section .container-fluid{
+        padding: .5rem !important;
+    }
+   
 }
 
 @media screen and (max-width: 400px) {
